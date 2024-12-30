@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            text-align: left;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .input-name {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .input-name i {
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+
+        .name {
+            padding-left: 25px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            height: 40px;
+        }
+
+        .submit-button {
+            text-align: center;
+        }
+
+        .submit-button input[type="button"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-button input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .error {
+            color: #ff0000;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login form</h2>
+    <div class="form-container">
+        <form action="/login" method="post" onsubmit="return redirectAfterLogin()">
+            <div class="input-name">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="email" placeholder="Enter Email" class="name" required>
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="input-name">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="password" placeholder="Enter password" class="name" required>
+                <span id="passwordError" class="error"></span>
+            </div>
+
+            <div class="submit-button">
+                <input type="button" value="Submit" onclick="validateForm()">
+            </div>
+
+            <p>Not a member? <a href="{{ url_for('register') }}">Register Now</a></p>
+        </form>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        // Email validation
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            document.getElementById('emailError').innerText = 'Invalid email format';
+            return false;
+        } else {
+            document.getElementById('emailError').innerText = '';
+        }
+
+        // Password validation (you can customize the criteria)
+        if (password.length < 6) {
+            document.getElementById('passwordError').innerText = 'Password must be at least 6 characters';
+            return false;
+        } else {
+            document.getElementById('passwordError').innerText = '';
+        }
+
+        // Here, you would typically make an AJAX request to your server to check if the email and password exist in the register
+        // For simplicity, we assume the email and password are registered
+
+        // Redirect to home page
+        alert('Login successful! Redirecting to srki page...');
+        window.location.href = "/srki.html"; // Redirect to srki page
+        return false; // Prevent default form submission
+    }
+</script>
+
+
+</body>
+</html>

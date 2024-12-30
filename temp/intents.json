@@ -1,0 +1,949 @@
+{"intents": [
+{"tag": "greetings",
+  "patterns": ["hello","hello there","hey","hey there","hi","hi there","good day","what's up?","how is it going?","how you doing?","hi ribot","ribot hi","ribot hello","hello ribot","ribot hey","hey ribot"],
+  "responses": ["Hello!","Hey!","What can I do for you?","Hello! How can I assist you today?","How can I help you?","Hello! How can I assist you today? If you have any questions or need help with something, feel free to ask.","How can I assist you today? If you have any questions or need assistance with something, feel free to ask.","If you have any questions or need help with something, feel free to ask."]
+  },
+  {"tag": "greetings2",
+  "patterns": ["how are you?"],
+  "responses": ["As an AI, I don't have feelings or emotions like humans do, but I'm here and ready to assist you with any questions or tasks you have! How can I help you today?","Thank you for asking! As an AI, I don't have feelings or emotions, but I'm functioning well and ready to assist you. How can I help you today?","I'm here and ready to assist you! How can I help you today?"]
+  },
+    {
+    "tag": "greetings3",
+  "patterns": ["can i ask some question?","can i ask question?","can i ask questions?","can i ask  some questions?"],
+  "responses": ["Of course! Feel free to ask any questions regarding career guidance you have, and I'll do my best to assist you. What would you like to know?","Absolutely! Please feel free to ask your question related career guidance, and I'll do my best to provide you with an answer or assistance. What would you like to know?","Yes, you can ask questions! Feel free to ask anything regarding career guidance you'd like, and I'll do my best to assist you. What would you like to know?"]
+  },
+  {
+    "tag": "srki info",
+  "patterns": ["Sarvajanik Education Society", "History of Sarvajanik Education Society", "about shree ramkrishana institute","About Sarvajanik Education Society","about srki","tell me about srki","about SHREE RAMKRISHNA INSTITUTE OF COMPUTER EDUCATION AND APPLIED SCIENCES"],
+  "responses": ["Sarvajanik Education Society, founded in 1912 in Surat, manages 35. educational institutions from pre-school to postgraduate level.<br> It emphasizes affordable education, thrives through transparent management and alumni support despite challenges like the 2006 floods.<br> The society is modernizing its system and campuses to meet evolving educational needs and shape India's future citizens.<br><br><b>Notes:<br> If you require additional information, please type ('Course offered').</b>"]
+  },
+
+  {
+    "tag": "city",
+    "patterns": ["Town", "city", "srki", "where is college?", "In which city srki placed?", "In which city srki is?", "In which Town srki is?", "In which Town srki placed?"],
+    "responses": ["surat", "srki located in surat city"]
+  },
+  {
+    "tag": "name",
+  "patterns": ["what is your name","name","what's your name","who are you","what should I call you"],
+  "responses": ["You can call me Ribot","I'm Ribot","I'm Ribot your virtual assistant","My name is Ribot! It's nice to meet you. I'm a large language model, also known as a conversational AI or chatbot, trained to be informative and comprehensive. Is there anything I can help you with today?"]
+  },
+  {
+   "tag": "Courses",
+   "patterns": ["Courses","what type of courses available in srki?", "courses in srki","course in shree ramkrishana institute?", "course in shree ramkrishana institute of computer education and applied sciences?","which types of courses available in srki?","which types of courses available in shree ramkrishana institute?"],
+   "responses": ["<b> Bachelor Courses:</b><br><b>(1)</b> B.Sc.Microbiology,<br><b>(2)</b> B.Sc.Chemistry,<br><b>(3)</b> B.Sc.Biotechnology,<br><b>(4)</b> B.Sc.Information Technology,<br><b>(5)</b> B.Sc.Computer Science,<br><b>(6)</b> B.Sc.Environmental Science.<br><br><b> Masters Course:</b><br><b>(1)</b> M.Sc.Biotechnology,<br><b>(2)</b> M.Sc.Genetics,<br><b>(3)</b> M.Sc.Medical Biotechnology,<br><b>(4)</b> M.Sc.Information Technology,<br><b>(5)</b> M.Sc.Web and Mobile Technology,<br><b>(6)</b> M.Sc.Advanced Computing,<br><b>(7)</b> M.Sc.Microbiology,<br><b>(8)</b> M.Sc.Industrial Microbiology,<br><b>(9)</b> M.Sc.Medical Laboratory Technology,<br><b>(10)</b> M.Sc.Organic Chemistry,<br><b>Notes:<br> If you require more information, please Type ('course name'+'eligibility').</b>"]
+ },
+ {
+   "tag": "UG-Courses",
+   "patterns": ["UG-Course","which type of ug-courses available in srki?","Bachelor's Programs","Undergrad Studies","Junior-Level Courses","First-degree Courses","Lower-Division Courses","Freshman Courses","Sophomore Courses","Bachelor's Level Studies","which type of ug-courses available in shree ramkrishana institute","which type of bachelor courses available in shree ramkrishana institute?","bachelor courses","after completing 12th which courses i can do in srki?","after completing 12th science which courses i can do in srki?","after completing 12th commerce which courses i can do in srki?", "ug courses", "ug course", "ug courses in shree ramkrishana institute?", "ug course in srki", "ug course in shree ramkrishna institute of computer education and applied sciences?"],
+   "responses": ["<b>Bachelor Courses:</b><br><b>(1)</b> B.Sc.Microbiology,<br><b>(2)</b> B.Sc.Chemistry,<br><b>(3)</b> B.Sc.Biotechnology,<br><b>(4)</b> B.Sc.Information Technology,<br><b>(5)</b> B.Sc.Computer Science,<br><b>(6)</b> B.Sc.Environmental Science.<br><br><b>Notes:<br>If you require more information, please Type ('bachelor course name'+'eligibility').</b>"]
+ },
+  {
+   "tag": "PG-Courses",
+     "patterns": ["what type of pg-courses available in srki?","Which type of pg-courses available in srki?","Postgrad Studies","Advanced Courses","Higher-Degree Courses","Graduate-Level Studies","Master's Level Courses","pg courses","Master's Programs","pg course","Advanced Studies", "pg courses in srki", "pg course in srki", "pg course in shree ramkrishna institute of computer education and applied sciences?", "pg course in shree ramkrishana institute?", "pg course in shree ramkrishana institute of computer education and applied sciences?"],
+   "responses": ["<b>master Courses:<b><br><b>(1)</b> M.Sc.Biotechnology,<br><b>(2)</b> M.Sc.Genetics,<br><b>(3)</b> M.Sc.Medical Biotechnology,<br><b>(4)</b> M.Sc.Information Technology,<br><b>(5)</b> M.Sc.Web and Mobile Technology,<br><b>(6)</b> M.Sc.Advanced Computing,<br><b>(7)</b> M.Sc.Microbiology,<br><b>(8)</b> M.Sc.Industrial Microbiology,<br><b>(9)</b> M.Sc.Medical Laboratory Technology,<br><b>(10)</b> M.Sc.Organic Chemistry,<br><br><b>Notes:<br>If you require more information, please Type ('master course name'+'eligibility').</b>"]
+},
+  {
+    "tag": "courseDuration",
+    "patterns": ["how long will be courses","Study Period","Duration of Program", "Study Duration","courseDuration","course Duration","how long will it take to complete courses"],
+    "responses": ["which course do you want to know? i have two choices <b>bachelor</b> and <b>master</b>.<br><b>notes:<br> If you are looking for a bachelor course duration then type (<b>'bachelor'</b> or <b>'master' + 'course duration'</b>)<br> "]
+  },
+  {
+     "tag": "bachelor course duration",
+     "patterns": ["how long will be bachelor courses", "course duration for bachelor","bachelor course duration", "how long will it take to complete bachelor courses","all courses time duration for bachelor"],
+     "responses": ["Our college offers 3 year long courses. each year has two semester. there are six semester in total. <br> Time duration will be the same for all bachelor courses.<br><b>notes:<br> if you are looking for a bachelor semester duration then type ('bachelor' + 'semester duration').</b>"]
+  },
+  {
+     "tag": "master course duration",
+    "patterns": ["how long will be master courses", "course duration for master","master course duration","how long will it take to complete master courses","all courses time duration for master"],
+     "responses": ["Our college offers 2 year long courses. each year has two semester. there are four semester in total.<br> Time duration will be the same for all master courses.<br><b>notes:<br> if you are looking for a master semester duration then type ('master' + 'semester duration').</b>"]
+},
+
+  {
+    "tag": "Location",
+    "patterns": ["location","address","place","Site","Area","Locale","Spot","where is it located","where is srki?","what is the location of the college"],
+    "responses": ["Informatics College shree ramkrishna institute of computer education and applied sciences is located in M.T.B College Campus, B/h P.T Science College, Opp.Chowpati,<br>Athwalines, Surat-395001 Gujarat, India.<a href='https://maps.app.goo.gl/Kp8MBFnfaD2D697TA'  target='_blank'>location</a>"]
+  },
+
+ {
+    "tag":"bachelor semester",
+    "patterns": ["how many subject i will study in one semester for in bachelor?.","tell me about bachelor semester","tell me about bachelor semester","how many subjects in one sem in bachelor","bachelor semester duration","in bachelor how many subjects available in one semester?"],
+    "responses": ["one sem has six to seven subject in bachelor you will studying.<br>The single semester will be around 4 months.<br><b>notes:<br> if you are looking for a curriculum then type ('course name' + 'curriculum')"]
+  },
+  {
+    "tag": "master semester",
+    "patterns": ["how many subject i will study in one semester for in master?.","tell me about master semester","tell me about master semester","how many subjects in one sem in master","master semester duration","in master how many subjects available in one semester?" ],
+    "responses": ["one sem has four to five subject in master you will studying.<br>The single semester will be around 4 months.<br><b>notes:<br> if you are looking for a curriculum then type ('course name' + 'curriculum')"]
+},
+
+  {"tag": "studentRequirements",
+  "patterns": ["what are the student requirements for admission","important document","student requirements","important document for admission","Entry qualifications","Enrollment prerequisites","Enrollment requirements","Student qualifications","Entry qualifications","Admission criteria","student requirements","entry requirements","admission requirements"],
+ "responses": ["Academic Level<br>NEB +2 overall aggregate of 2.2 CGPA (55%) or above with each subject (theory and practical) grade D+ or above, and SEE Mathematics score of C+ (50%) or above.<br>For A-Levels, a minimum of 3.5 credits and atleast a grade of D and above.<br>English Proficiency<br>English NEB XII Marks greater or equals to 60% or 2.4 GPA<br>For Level 4 or Year 1 BIT<br>Pass in General Paper or English Language or IELTS 5.5 or PTE 47/ Meeting UCAS Tariff points of 80.<br>For Level 4 or Year 1 BBA<br>Pass in General Paper or English Language or IELTS 5.5 or PTE 47/ Meeting UCAS Tariff points of 96.<br><b>SRKI Admission Inquiry Form 2024-25</b>: <a href='https://www.srki.ac.in/upload/2023-24/Admission%202023-24/EOI_QR_2425.png'  target='_blank'>QR code</a> <br><b>this is form for admission purpose: </b><a href='https://www.srki.ac.in/upload/2023-24/Admission%202023-24/EOI_QR_2425.png'  target='_blank'>admission inquiry form</a>"]
+  },
+
+  {"tag": "classes",
+  "patterns": ["how many classes will be there in a day","classes","how long are the classes?"],
+  "responses": ["There may be two or three classes per day. Each class will be of 1 hour and 30 minutes."]
+  },
+
+  {"tag": "teachingStyle",
+  "patterns": ["what is the teaching style of this college?","Teaching methodology","Educational approach","Is the teaching pattern different from other college?","what is the teaching format?","teachingStyle"],
+  "responses": ["Our college has different teaching patterns than other colleges  We adopt a British teaching methodology, following the LTW techniques which stands for Lecture, Tutorial and Workshop.<br>You can provide us with your contact details and our counselors shall reach out to you and provide you with further details."]
+  },
+
+  {"tag": "exams",
+  "patterns": ["what are the exams like?","exams","Finals","Tests","Evaluative tests","Examinations","Evaluations","What is the exam pattern"],
+  "responses": ["There are assignments which carry more weight than your written exams. The assignments have deadlines which you should not exceed if you want to get better marks."]
+  },
+
+  {"tag": "hours",
+  "patterns": ["what are your hours","hours","when are you guys open","what your hours of operation"],
+  "responses": ["You can message us here at any hours. But our college premises will be open from 7:00 am to 5:00 pm only."]
+  },
+
+  {"tag": "funActivities",
+  "patterns": ["will there be any extra curriculum activities?","Enjoyable pastimes","Entertaining pastimes","Entertaining hobbies","fun activities","funActivities","does the college conducts any fun program"],
+  "responses": ["Yes, Of course. Our college not only provides excellent education but also encourage students to take part in different curriculum activities. The college conducts yearly programs like  Sports Activities, Carnival, Holi festival, and Christmas. <br> Also our college has basketball court, badminton court, table tennis, chess, carrom board and many more refreshment zones.<br> also our college provide activities like cells & Committees,Red Cross Activities,Maitri Setu, Educational Tour Cultural,NSS,NCC"]
+  },
+
+  {"tag": "facilities",
+  "patterns": ["what facilities are provided by the college?","Conveniences","facilities","Features","Services","what are the facilities of college for students", "what are the college infrastructures "],
+ "responses": ["With excellent education facilities, Our College provides various other facilities like 24 hours internet, library, classes with AC, discusson room, canteen, parking space, and student service for any students queries."]
+  },
+
+  {"tag": "fee chem",
+    "patterns": ["B.Sc.Chemistry fees","B.sc.chem fees structure","B.sc.chemistry fees structure","B.Sc.Chem fees","how much is the college fee in chem?","Chemistry study fee","Chemistry learning cost","Chemistry educational cost","Chemistry instructional fee","Chemistry academic charge","Chemistry course fee","Chemistry program cost","Chemistry enrollment fee","Chemistry education expense","fee chem","fee chemistry","what is the fee structure of chem?","how much is the college fee in chemistry?","what is the fee structure of chemistry?"],
+    "responses": ["Chemistry Admission fees<br>fee=RS 1,000<br>Year 1<br>University per year fee= RS 54,750 Each odd semester fee=RS 29,250 even semester fee= RS 25,500<br>Year 2<br>University per year fee= RS 54,750 Each odd semester fee=RS 29,250 even semester fee= RS 25,500<br>Year 3<br>University per year fee= RS 54,750 Each odd semester fee=RS 29,250 even semester fee= RS 25,500<br>GrandTotal fee= RS 1,64,250]<br><b>Notes:<br> Here is the link to the fee structure:</b> <a href='https://www.srki.ac.in/pages/fees-structure/'  target='_blank'>Fee Structure.</a>"]
+
+  },
+  {"tag": "fee BT/MB",
+    "patterns": ["B.Sc.Biotechnology fees","B.Sc.BT fees","B.Sc.Microbiology fees","B.sc.Biotechnology fees structure","B.sc.Microbiology fees structure","B.Sc.MB fees","how much is the college fee in BT/MB?","BT/MB learning cost","Biotechnology/Microbiology learning cost","BT/MB instructional fee",
+      "Biotechnology/Microbiology instructional fee","B.sc.bt fees structure","B.sc.mb fees structure","fee BT/MB","fee BT","BT/MB study fee","BT/MB academic charge","Biotechnology/Microbiology  academic charge","Biotechnology/Microbiology study fee","fee MB","what is the fee structure of BT/MB?",
+      "how much is the college fee in BT?","what is the fee structure of BT?","how much is the college fee in MB?","what is the fee structure of MB?",
+      "how much is the college fee in microbiology?","what is the fee structure of microbiology?","how much is the college fee in Bio technology?","what is the fee structure of Bio technology?"],
+    "responses": ["BT/MB Admission fees<br>fee=RS 1,000<br>Year 1<br>University per year fee= RS 57,250 Each odd semester fee=RS 30,500 even semester fee= RS 26,750<br>Year 2<br>University per year fee= RS 57,250 Each odd semester fee=RS 30,500 even semester fee= RS 26,750<br>Year 3<br>University per year fee= RS 57,250 Each odd semester fee=RS 30,500even semester fee= RS 26,750<br>GrandTotal fee= RS 1,71,750]<br><b>Notes:<br> Here is the link to the fee structure:</b> <a href='https://www.srki.ac.in/pages/fees-structure/'  target='_blank'>Fee Structure.</a>"]
+
+  },
+    {"tag": "fee CS/IT",
+    "patterns": ["B.Sc.Computer Science fees","B.Sc.CS fees","B.Sc.Information Technology fees","B.Sc.IT fees","B.sc.Information Technology fees structure","B.sc.Computer Science fees structure","how much is the college fee in CS/IT?","Computer Science/Information Technology educational cost",
+      "Computer Science/Information Technology course fee","B.sc.it fees structure","B.sc.cs fees structure","Computer Science/Information Technology program cost","Computer Science/Information Technology enrollment fee",
+      "Computer Science/Information Technology education expense","Computer Science/Information Technology learning cost","Computer Science/Information Technology instructional fee",
+      "Computer Science/Information Technology academic charge","Computer Science/Information Technology education expense","fee CS","fee IT","fee CS/IT","what is the fee structure of CS/IT?",
+      "how much is the college fee in computer science?","what is the fee structure of computer science?","how much is the college fee in CS?","what is the fee structure of CS?",
+      "how much is the college fee in Information Technology?","what is the fee structure of Information Technology?"],
+    "responses": ["\"CS/IT Admission fees<br>\nfee=RS 1,000<br>\nYear 1<br>\nUniversity per year fee= RS 47,250 Each odd semester fee=RS 25,500 even semester fee= RS 21,750<br>\nYear 2<br>\nUniversity per year fee= RS 47,250 Each odd semester fee=RS 25,500 even semester fee= RS 21,750<br>\nYear 3<br>\nUniversity per year fee= RS 47,250 Each odd semester fee=RS 25,500even semester fee= RS 21,750<br>\nGrandTotal fee= RS 1,41,750]<br>\n<b>Notes:<br> Here is the link to the fee structure:</b> <a href='https://www.srki.ac.in/pages/fees-structure/'  target='_blank'>Fee Structure.</a>\""]
+
+  },
+
+  {"tag": "fee ES",
+    "patterns": ["B.Sc.Environmental Science fees","B.Sc.ES fees","how much is the college fee in ES?","Environmental Science course fee","Environmental Science program cost","Environmental Science enrollment fee","Environmental Science education expense","fee ES","what is the fee structure of Environmental science?","fee Environmental science","how much is the college fee in Environmental science"],
+    "responses": ["ES Admission fees<br>fee=RS 1,000<br>Year 1<br>University per year fee= RS 34,750 Each odd semester fee=RS 19,250 even semester fee= RS 15,500<br>Year 2<br>University per year fee= RS 34,750 Each odd semester fee=RS 19,250 even semester fee= RS 15,500<br>Year 3<br>University per year fee= RS 34,750 Each odd semester fee=RS 19,250 even semester fee= RS 15,500<br>GrandTotal fee= RS 1,04,250]<br><b>Notes:<br> Here is the link to the fee structure:</b> <a href='https://www.srki.ac.in/pages/fees-structure/'  target='_blank'>Fee Structure.</a>"]
+
+  },
+
+  {"tag": "goodbye",
+  "patterns": ["cya","See you later","Goodbye","I am leaving","Have a Good Day","bye","see ya"],
+  "responses": ["Sad to see you go :(","Talk you later","Goodbye"]
+  },
+
+  {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["I apologize, I'm not sure how to help with that","Sorry,can't understand you", "Please give me more info", "Not sure I understand"]
+  },
+
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure"]
+  },
+  {
+  "tag": "B.Sc.Chemistry info",
+  "patterns": ["Information on B.Sc. Chemistry Degree","Bachelor's in Chemistry Program Details","B.Sc. Chemistry Course Structure","Introduction to B.Sc. Chemistry","Overview of Undergraduate Chemistry Courses","B.Sc. Chemistry Program Overview","Details of B.Sc. Chemistry Course","Description of Bachelor of Science in Chemistry","B.Sc.Chemistry Course Description", "Tell me about B.Sc.Chemistry Course Description", "ug Courses in Chemistry for bachelor", "B.Sc.Chemistry info", "B.Sc.chem info", "ug Courses in Chem for bachelor","Details about B.Sc. Chemistry Program","information about B.Sc.Chemistry"],
+  "responses": ["B.Sc. in Chemistry is an undergraduate three years program that focuses on aspirants acquiring and demonstrating talent to make a destined career in industry and in the field of research.<br> The aim of Bachelor’s degree program in chemistry is intended to provide broadand balanced knowledge.<br> It develops students ability and skill to acquire expertise over solving both theoretical and applied chemistry problems.<br> It enables them to undertake further studies in chemistry in related areas or multidisciplinary areas that can be helpful for self-employment and entrepreneurship.<br><b>notes:<br> if you need to check course duration then type ('bachelor' + 'course duration').</b>" ]
+  },
+  {
+    "tag": "B.Sc.Chemistry eligibility",
+    "patterns": ["Who can apply for B.Sc. Chemistry?","B.Sc. Chemistry Application Requirements","What do I need to qualify for B.Sc. Chemistry?","Entry qualifications for B.Sc. Chemistry","Admission standards for B.Sc. Chemistry","What are the eligibility requirements for B.Sc. Chemistry?","Minimum requirements for B.Sc. Chemistry","B.Sc. Chemistry Admission Criteria","Who is eligible for B.Sc. Chemistry?","What are the conditions for B.Sc. Chemistry?","Prerequisites for B.Sc. Chemistry Enrollment","Criteria for Admission to B.Sc. Chemistry","Qualifications needed for B.Sc. Chemistry","Eligibility for Bachelor of Science in Chemistry","Requirements for B.Sc. Chemistry Admission","B.Sc.Chemistry eligibility", "B.Sc.chem eligibility","chem eligibility"],
+    "responses": ["A candidate must have passed 10+2 or an equivalent examination in a science stream with Chemistry as one of the subjects.<br><b>notes:<br>If you require more information, please Type ('course name' + 'info').</b>"       ]
+    },
+  {
+    "tag": "B.Sc.Chemistry salient features",
+    "patterns": ["Significant aspects of B.Sc. Chemistry program","Prominent elements of B.Sc. Chemistry education","Core attributes of B.Sc. Chemistry degree","Key aspects of B.Sc. Chemistry","B.Sc.Chemistry salient features", "Tell me about salient features for B.Sc.Chemistry?","Tell me about salient features for Chemistry?", "Tell me about salient features for Chem?"],
+    "responses": ["Courses as per NEP 2020 of Government of India<br><b>(1)</b> Curriculum as per UGC Guidelines<br><b>(2)</b> B.Sc., M.Sc. & Ph.D. Courses under the same roof<br><b>(3)</b> Sophisticated & Well-equipped Laboratories<br><b>(4)</b> Well-qualified & Experienced Faculties<br><b>(5)</b> Industrial Liaison for Training & Placement<br><b>(6)</b> Scholarships & Freeships available<br><b>(7)</b> On Campus Hostel Facility available.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'fees structure')</b>"]
+    },
+  {
+    "tag": "B.Sc.Chemistry curriculum",
+    "patterns": ["Overview of B.Sc. Chemistry Studies", "What is covered in B.Sc. Chemistry Program?","Components of B.Sc. Chemistry Curriculum", "Coursework for B.Sc. Chemistry Degree","Details of Bachelor of Science in Chemistry Curriculum","Outline of Undergraduate Chemistry Courses", "B.Sc. Chemistry Course Outline", "B.Sc.Chemistry curriculum", "B.Sc.Chem curriculum", "Chem curriculum"],
+    "responses": ["<b>The program focuses on topics like:</b><br><b>(1)</b> Organic Chemistry<br><b>(2)</b> Inorganic Chemistry<br><b>(3)</b> Physical Chemistry<br><b>(4)</b> Polymer Chemistry<br><b>(5)</b> Basic Analytical Chemistry<br><b>(6)</b> Chemistry of New Materials<br><b>(7)</b> Chemoinformatics<br><b>(8)</b> Forensic Science<br><b>(9)</b> Green Chemistry<br><b>(10)</b> Instrumentation & Techniques.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects')"]
+},
+  {
+    "tag": "B.Sc.Chemistry future prospects",
+    "patterns": ["Potential careers for B.Sc. Chemistry graduates","Prospects for B.Sc. Chemistry professionals","Opportunities for B.Sc. Chemistry alumni","What can you do with a B.Sc. Chemistry degree?","Employment options for B.Sc. Chemistry holders","Career pathways for B.Sc. Chemistry majors","Outlook for B.Sc. Chemistry graduates","Future employment possibilities with a B.Sc. Chemistry degree","Job prospects after completing Bachelor of Science in Chemistry", "Career opportunities for B.Sc. Chemistry graduates","B.Sc.Chemistry Course future prospects","B.Sc.Chemistry future prospects","B.Sc.Chem future prospects", "Tell me about B.Sc.Chemistry Course future prospects", "Tell me about B.Sc.Chem Course future prospects", "Chem Course future prospects","b.sc.Chemistry future prospects","b.sc.Chem future prospects"],
+    "responses": ["B.Sc. Chemistry opens up a range of different career options from practical scientist through research technologist to academic specialist that you can explore.<br>Candidate can further opt for Master of Science in related fields.<br><br><b>Some of the most popular career options after B.Sc.Chemistry includes:</b><br><b>(1)</b> Agricultural Chemist<br><b>(2)</b> Food & Flavor Chemist<br><b>(3)</b> Forensic Labs<br><b>(4)</b> Industrial Research Assistant<br><b>(5)</b> Lab Assistant<br><b>(6)</b> Pharma Assistant<br><b>(7)</b> Production Chemist<br><b>(8)</b> Quality Controller<br><b>(9)</b> Toxicologist<br><b>(10)</b> Water Quality Chemist.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'salient features')</b>"]
+  },
+  {
+  "tag": "B.Sc.Biotechnology info",
+  "patterns": ["Information on B.Sc.Biotechnology Degree", "Bachelor's in Biotechnology Program Details", "B.Sc.Biotechnology Course Structure","Introduction to B.Sc.Biotechnology","Overview of Undergraduate Biotechnology Courses","B.Sc.Biotechnology Program Overview", "Details of B.Sc.Biotechnology Course", "Description of Bachelor of Science in Biotechnology", "B.Sc.Biotechnology Course Description", "Tell me about B.Sc.Biotechnology Course Description", "ug Courses in Biotechnology for bachelor", "B.Sc.Biotechnology info", "B.Sc.BT info", "ug Courses in BT for bachelor", "Details about B.Sc. Biotechnology Program","information about B.Sc.Biotechnology","B.Sc.Biotechnology info Course Description", "Tell me about B.Sc.Biotechnology info Course Description", "B.Sc.Biotechnology info", "B.Sc.bt info", "ug Courses in Biotechnology for bachelor", "ug Courses in bt for bachelor", "information about B.Sc.Biotechnology info"],
+  "responses": ["B. Sc. Biotechnology is under-graduate 3 years course that is streamlined to endow students with an improved knowledge of the cellular and biomolecular processes and study them through the development of a variety of technologies.<br> The meticulously structured program has a strong interdisciplinary research base in biological sciences and engineering which prepares the student for the industry as well as research programs .<br> The program is for students who have a strong fondness to learn through practical education and a vision to explore new possibilities in the field of Biotechnology.<br> Graduates in this discipline significantly contribute to research and development to improve people's lives and health.<br><b>notes:<br> if you need to check course duration then type ('bachelor' + 'course duration').</b> "] },
+  {
+    "tag": "B.Sc.Biotechnology eligibility",
+    "patterns": ["Who can apply for B.Sc.Biotechnology?", "B.Sc.Biotechnology Application Requirements", "What do I need to qualify for B.Sc.Biotechnology?", "Entry qualifications for B.Sc.Biotechnology", "Admission standards for B.Sc.Biotechnology", "What are the eligibility requirements for B.Sc.Biotechnology?", "Minimum requirements for B.Sc.Biotechnology", "B.Sc.Biotechnology Admission Criteria", "Who is eligible for B.Sc.Biotechnology?", "What are the conditions for B.Sc.Biotechnology?", "Prerequisites for B.Sc.Biotechnology Enrollment", "Criteria for Admission to B.Sc.Biotechnology", "Qualifications needed for B.Sc.Biotechnology", "Eligibility for Bachelor of Science in Biotechnology", "Requirements for B.Sc.Biotechnology Admission", "B.Sc.Biotechnology eligibility", "B.Sc.BT eligibility", "BT eligibility"],
+    "responses": ["A candidate must have passed 10+2 or an equivalent examination in a science stream with Biology as one of the subjects.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"]
+  },
+  {
+    "tag": "B.Sc.Biotechnology salient features",
+    "patterns": ["Significant aspects of B.Sc.Biotechnology program", "Prominent elements of B.Sc.Biotechnology education", "Core attributes of B.Sc.Biotechnology degree", "Key aspects of B.Sc.Biotechnology", "B.Sc.Biotechnology salient features", "Tell me about salient features for B.Sc.Biotechnology?", "Tell me about salient features for Biotechnology?", "Tell me about salient features for BT?","B.Sc.Biotechnology salient features", "Tell me about salient features for B.Sc.Biotechnology?", "Tell me about salient features for b-tech?", "Tell me about salient features for Biotechnology?", "salient features for Biotechnology?", "salient features for b-tech?", "salient features for B.Sc.Biotechnology"],
+    "responses": ["Courses as per NEP 2020 of Gov. of India.<br> Curriculum as per UGC Guidelines.<br> B.Sc., M.Sc. & Ph.D. Courses under the same roof.<br> Sophisticated & Well-equipped Laboratories.<br> Well-qualified & Experienced Faculties.<br> Industrial Liaison for Training & Placement.<br> Scholarships & Freeships available.<br> On Campus Hostel Facility available.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'fees structure')</b>"   ]
+    },
+  {
+    "tag": "B.Sc.Biotechnology curriculum",
+        "patterns": ["Overview of B.Sc.Biotechnology Studies","What is covered in B.Sc.Biotechnology Program?", "Components of B.Sc.Biotechnology Curriculum", "Coursework for B.Sc.Biotechnology Degree", "Details of Bachelor of Science in Biotechnology Curriculum", "Outline of Undergraduate Biotechnology Courses", "B.Sc.Biotechnology Course Outline", "B.Sc.Biotechnology curriculum", "B.Sc.BT curriculum", "BT curriculum"],
+    "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Animal Biotechnology<br><b>(2)</b> Animal and Plant Cell Culture<br><b>(3)</b> Biochemistry<br><b>(4)</b> Cell Biology and Cytogenetics<br><b>(5)</b> Genetics<br><b>(6)</b> Immunology<br><b>(7)</b> Microbial Biotechnology<br><b>(8)</b> Molecular Biology<br><b>(9)</b> Plant Biotechnology<br><b>(10)</b> rDNA Technology.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects')"]
+    },
+      {"tag": "B.Sc.Biotechnology future prospects",
+      "patterns": ["Potential careers for B.Sc.Biotechnology graduates", "Prospects for B.Sc.Biotechnology professionals", "Opportunities for B.Sc.Biotechnologyalumni", "What can you do with a B.Sc.Biotechnology degree?", "Employment options for B.Sc.Biotechnology holders", "Career pathways for B.Sc.Biotechnology majors", "Outlook for B.Sc.Biotechnology graduates", "Future employment possibilities with a B.Sc.Biotechnology degree", "Job prospects after completing Bachelor of Science in Biotechnology", "Career opportunities for B.Sc.Biotechnology graduates", "B.Sc.Biotechnology Course future prospects", "B.Sc.Biotechnology future prospects","B.Sc.BT future prospects", "Tell me about B.Sc.Biotechnology Course future prospects", "Tell me about B.Sc.BT Course future prospects", "BT Course future prospects","b.sc.Biotechnology future prospects", "b.sc.BT future prospects"],
+       "responses": ["B.Sc. Biotechnology opens up a range of different career options from practical scientist through research technologist to academic specialist that you can explore.<br> Candidate can further opt for Master in Science in fields such as Biotechnology, Genetics, Medical Biotechnology.<br><b>Some of the most popular career options for B.Sc.Biotechnology includes:</b><br><b>(1)</b> Agricultural Sciences<br><b>(2)</b> Drug and pharmaceutical research<br><b>(3)</b> Environment Control and Waste Management<br><b>(4)</b> Food and Dairy Sciences<br><b>(5)</b> Forensic Labs<br><b>(6)</b> Genetic Diagnostic Laboratories<br><b>(7)</b> Industrial Research Assistant<br><b>(8)</b> Process Development Scientist<br><b>(9)</b> Quality Control<br><br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'salient features')</b>"]
+      },
+  {
+    "tag": "B.Sc.Microbiology info",
+    "patterns": ["Information on B.Sc.Microbiology Degree","Bachelor's in Microbiology Program Details","B.Sc.Microbiology Course Structure","Introduction to B.Sc.Microbiology","Overview of Undergraduate Microbiology Courses","B.Sc.Microbiology Program Overview","Details of B.Sc.Microbiology Course","Description of Bachelor of Science in Microbiology","B.Sc.Microbiology Course Description", "Tell me about B.Sc.Microbiology Course Description", "ug Courses in Microbiology for bachelor", "B.Sc.Microbiology info", "B.Sc.MB info", "ug Courses in MB for bachelor","Details about B.Sc.Microbiology Program","information about B.Sc.Microbiology"],
+    "responses": ["B.Sc. in Microbiology is an undergraduate three years program that focuses on serving interdisciplinary knowledge engrossed with other Biological, chemical, Physical and Technological Sciences.<br>Microbiology is a subject that comprises of microorganisms such as bacteria, viruses, fungi, protozoa, etc.<br>B.Sc. in Microbiology is structured to provide education regarding the properties of microorganisms and their impact on the human body.<br>The programme also covers the diseases caused by different types of bacteria and viruses.<br>Course give inclination to the students to pursue career in research related to microbial activities and products for the betterment of mankind.<br><b>notes:<br> if you need to check course duration then type ('bachelor' + 'course duration').</b>"]
+  },
+  {
+    "tag": "B.Sc.Microbiology eligibility",
+    "patterns": ["Who can apply for B.Sc.Microbiology?", "B.Sc.Microbiology Application Requirements", "What do I need to qualify for B.Sc.Microbiology?", "Entry qualifications for B.Sc.Microbiology", "Admission standards for B.Sc.Microbiology", "What are the eligibility requirements for B.Sc.Microbiology?", "Minimum requirements for B.Sc.Microbiology", "B.Sc.Microbiology Admission Criteria", "Who is eligible for B.Sc.Microbiology?", "What are the conditions for B.Sc.Microbiology?", "Prerequisites for B.Sc.Microbiology Enrollment", "Criteria for Admission to B.Sc.Microbiology", "Qualifications needed for B.Sc.Microbiology", "Eligibility for Bachelor of Science in Microbiology", "Requirements for B.Sc.Microbiology Admission", "B.Sc.Microbiology eligibility", "B.Sc.MB eligibility", "MB eligibility"],
+    "responses": ["A candidate must have passed 10+2 or anequivalent examination in <br>a science stream with Biology as one of the subjects.<br><b>notes:<br>If you require more information, please Type ('course name' + 'info').</b>"]
+    },
+  {
+   "tag": "B.Sc.microbiology salient features",
+    "patterns": ["Significant aspects of B.Sc.microbiology program", "Prominent elements of B.Sc.microbiology education", "Core attributes of B.Sc.microbiology degree", "Key aspects of B.Sc.microbiology", "B.Sc.microbiology salient features", "Tell me about salient features for B.Sc.microbiology?", "Tell me about salient features for Microbiology?", "Tell me about salient features for MB?","B.Sc.microbiology salient features", "Tell me about salient features for B.Sc.microbiology?", "Tell me about salient features for MB?", "Tell me about salient features for Microbiology?", "salient features for Microbiology?", "salient features for MB?", "salient features for B.Sc.microbiology"],
+   "responses": ["<b>salient features: </b><br>Best Performing Science College in the region since 20 years.<br>Curriculum as per UGC Guidelines.<br>Courses, as per NEP 2020 of Government of India.<br>B.Sc., M. Sc. & Ph. D. Courses Under the same roof.<br>Sophisticated, & Well-equipped Laboratories.<br>Well-qualified, & Experienced Faculties.<br>Industrial, Liaison for Training & Placement.<br>Scholarships, & Freeships available.<br>On, Campus Hostel Facility available.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'fees structure')</b>"]
+    },
+  {
+    "tag": "B.Sc.microbiology curriculum",
+    "patterns": ["Overview of B.Sc.microbiology Studies","What is covered in B.Sc.microbiology Program?", "Components of B.Sc.microbiology Curriculum", "Coursework for B.Sc.microbiology Degree", "Details of Bachelor of Science in Microbiology Curriculum", "Outline of Undergraduate Microbiology Courses","B.Sc.microbiology Course Outline", "B.Sc.microbiology curriculum", "B.Sc.MB curriculum", "MB curriculum"],
+    "responses": ["<b>The program focuses on topics like:</b><br><b>(1)</b> Introduction to microbiology & Microscopy<br><b>(2)</b> Cell structure & Anatomy<br><b>(3)</b> Nutrition & Growth of microorganisms<br><b>(4)</b> Microbial Diversity<br><b>(5)</b> Microbial Ecology<br><b>(6)</b> Control of microorganisms<br><b>(7)</b> Microbial Taxonomy<br><b>(8)</b> Applied Environmental Microbiology<br><b>(9)</b> Applied Environmental Microbiology<br><b>(10)</b> Food & Dairy Microbiology<br><b>(11)</b> Microbial Physiology & metabolism<br><b>(12)</b> Microbial Technology<br><b>(13)</b> Health & Epidemiology<br><b>(14)</b> Haematology & Blood banking<br><b>(15)</b> Instrumentation & Techniques<br><b>(16)</b> Recombinant DNA Technology.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects')"]
+},
+   {
+     "tag": "B.Sc.microbiology future prospects",
+      "patterns": ["Potential careers for B.Sc.microbiology graduates", "Prospects for B.Sc.microbiology professionals", "Opportunities for B.Sc.microbiologyalumni", "What can you do with a B.Sc.microbiology degree?", "Employment options for B.Sc.microbiology holders", "Career pathways for B.Sc.microbiology majors", "Outlook for B.Sc.microbiology graduates", "Future employment possibilities with a B.Sc.microbiology degree", "Job prospects after completing Bachelor of Science in Microbiology", "Career opportunities for B.Sc.microbiology graduates", "B.Sc.microbiology Course future prospects", "B.Sc.microbiology future prospects","B.Sc.MB future prospects", "Tell me about B.Sc.microbiology Course future prospects", "Tell me about B.Sc.MB Course future prospects", "MB Course future prospects","B.Sc.microbiology future prospects", "b.sc.MB future prospects"],
+      "responses": ["Microbiology is an emerging field with constant research developments and advancements taking place.<br>There is a lot of scope for further study and research.<br>Students pursuing B.Sc. in Microbiology are also eligible for overseas education and jobs opportunities.<br> Government sectors also hire microbiology graduates for various posts on the basis of exams.<br><b>Some of the most popular career options for B.Sc.Microbiology includes:</b><br><b>(1)</b> Pharmaceutical Industries<br><b>(2)</b> Food and beverage Industries<br><b>(3)</b> Clinical/Analytical laboratories<br><b>(4)</b> Blood Banks<br><b>(5)</b> Water/sewage treatment plants<br><b>(6)</b> Agro Industries<br><b>(7)</b> Dairy Industries<br><b>(8)</b> Research Institutions<br><b>(9)</b> Government projects<br><b>(10)</b> Academics<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'salient features')</b>"]
+  },
+  {
+   "tag": "B.Sc.Information Technology info",
+  "patterns": ["Information on B.Sc.Information Technology Degree","Bachelor's in Information Technology Program Details","B.Sc.Information Technology Course Structure","Introduction to B.Sc.Information Technology","Overview of Undergraduate Information Technology Courses","B.Sc.Information Technology Program Overview","Details of B.Sc.Information Technology Course","Description of Bachelor of Science in Information Technology","B.Sc.Information Technology Course Description", "Tell me about B.Sc.Information Technology Course Description", "ug Courses in Information Technology for bachelor", "B.Sc.Information Technology info", "B.Sc.IT info", "ug Courses in IT for bachelor","Details about B.Sc.Information Technology Program","information about B.Sc.Information Technology"],
+   "responses": ["The B.Sc. IT program welcomes students from a variety of academic backgrounds interested in pursuing study and career in the field of Information Technology.<br> It will empower the student to fulfil their academic potential and assist to gain the industry-specific and interpersonal skills needed to work as an IT professional.<br> The student will learn how Information and Communications Technology (ICT) systems are developed, made live and managed with theory and practical aspects along with latest professional and etlical issues.<br> The B.Sc. IT program prepares students to meet the information and communication technology needs of government, business, healthcare, universities, and other kinds of organizations.<br><b>notes:<br> if you need to check course duration then type ('bachelor' + 'course duration').</b>"]
+    },
+  {
+    "tag": "B.Sc.Information Technology eligibility",
+    "patterns": ["Who can apply for B.Sc.Information Technology?", "B.Sc.Information Technology Application Requirements", "What do I need to qualify for B.Sc.Information Technology?", "Entry qualifications for B.Sc.Information Technology", "Admission standards for B.Sc.Information Technology", "What are the eligibility requirements for B.Sc.Information Technology?", "Minimum requirements for B.Sc.Information Technology", "B.Sc.Information Technology Admission Criteria", "Who is eligible for B.Sc.Information Technology?", "What are the conditions for B.Sc.Information Technology?", "Prerequisites for B.Sc.Information Technology Enrollment", "Criteria for Admission to B.Sc.Information Technology", "Qualifications needed for B.Sc.Information Technology", "Eligibility for Bachelor of Science in Information Technology", "Requirements for B.Sc.Information Technology Admission", "B.Sc.Information Technology eligibility", "B.Sc.IT eligibility", "IT eligibility"],
+    "responses": ["A candidate must have passed 10+2 in any stream with Mathematies / Physics / Electronics / Statistics / Business Maths as one of the subjects or an equivalent examination.<br>The candidate who has passed equivalent exam from other subjects or boards (like Diploma after 10th or 10+2 vocational etc.) <br>need to avail eligibility certificate for this programme from the Board of Equivalence (BoE) of the Sarvajanik University.<br><b>notes:<br>If you require more information, please Type ('course name' + 'info').</b>"]
+  },
+  {
+    "tag": "B.Sc.Information Technology salient features",
+    "patterns": ["Significant aspects of B.Sc.Information Technology program", "Prominent elements of B.Sc.Information Technology education", "Core attributes of B.Sc.Information Technology degree", "Key aspects of B.Sc.Information Technology", "B.Sc.Information Technology salient features", "Tell me about salient features for B.Sc.Information Technology?", "Tell me about salient features for Information Technology?", "Tell me about salient features for IT?","B.Sc.Information Technology salient features ", "Tell me about salient features for B.Sc.Information Technology?", "Tell me about salient features for IT?", "Tell me about salient features for Information Technology?", "salient features for Information Technology?", "salient features for IT?", "salient features for B.Sc.Information Technology"],
+    "responses": ["Best performing science college in the region since 20 years.<br>Curriculum as per UGC guidelines.<br>CBCS integrated syllabus design.<br>B.Sc., M. Sc. & Ph. D. courses under the same roof.<br>Sophisticated well-equipped laboratories.<br>Well-qualified & experienced faculties.<br>Industrial liaison for training placement.<br> Scholarships & freeships available.<br>On campus hostel facility available.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'fees structure')</b>"   ]
+    },
+  {
+       "tag": "B.Sc.Information Technology curriculum",
+    "patterns": ["Overview of B.Sc.Information Technology Studies","What is covered in B.Sc.Information Technology Program?", "Components of B.Sc.Information Technology Curriculum", "Coursework for B.Sc.Information Technology Degree", "Details of Bachelor of Science in Information Technology Curriculum", "Outline of Undergraduate Information Technology Courses", "B.Sc.Information Technology Course Outline", "B.Sc.Information Technology curriculum", "B.Sc.IT curriculum", "IT curriculum"],
+    "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Technology orientation<br><b>(2)</b> Web and mobile development<br><b>(3)</b> Embedded system and IOT<br><b>(4)</b> Big data<br><b>(5)</b> Digital marketing and SEO<br><b>(6)</b> Business information and system design<br><b>(7)</b> Java / . Net / PHP / Python programming<br><b>(8)</b> Computer communication and network.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects')"]
+},
+
+  {
+     "tag": "B.Sc.Information Technology future prospects",
+      "patterns": ["Potential careers for B.Sc.Information Technology graduates", "`Prospects for B.Sc.Information Technology professionals`", "Opportunities for B.Sc.Information Technologyalumni", "What can you do with a B.Sc.Information Technology degree?", "Employment options for B.Sc.Information Technology holders", "Career pathways for B.Sc.Information Technology majors", "Outlook for B.Sc.Information Technology graduates", "Future employment possibilities with a B.Sc.Information Technology degree", "Job prospects after completing Bachelor of Science in Information Technology", "Career opportunities for B.Sc.Information Technology graduates", "B.Sc.Information Technology Course future prospects", "B.Sc.Information Technology future prospects","B.Sc.IT future prospects", "Tell me about B.Sc.Information Technology Course future prospects", "Tell me about B.Sc.IT Course future prospects", "IT Course future prospects","B.Sc.Information Technology future prospects", "b.sc.IT future prospects"],
+      "responses": ["After completing B.Sc.IT, students can pursue their under graduate degree in programs like M.Sc.Information Technology, M.Sc.Web and Mobile technology, MCA, M.Sc.Advanced Computing etc.<br>Students enrich their technological knowledge which deals with secure data process, storing and communicating large amount of variable information between computers, mobile phones, and other electronic devices.<br><b>Some of the most popular career options for B.Sc.Information Technology includes:</b><br><b>(1)</b> Web and Mobile app Developer<br><b>(2)</b> Database Administrator<br><b>(3)</b> Business/Technical System Developer<br><b>(4)</b> Software Tester<br><b>(5)</b> Data Scientist<br><b>(6)</b> Network Support Engineer<br><b>(7)</b> IT Development & Support<br><b>(8)</b> Education and Training<br><b>(9)</b> Consultant, Sales, etc.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'salient features')</b>"]
+   },
+  {
+    "tag": "B.Sc.Environmental Science info",
+   "patterns": ["Information on B.Sc.Environmental Science Degree","Bachelor's in Environmental Science Program Details","B.Sc.Environmental Science Course Structure","Introduction to B.Sc.Environmental Science","Overview of Undergraduate Environmental Science Courses","B.Sc.Environmental Science Program Overview","Details of B.Sc.Environmental Science Course","Description of Bachelor of Science in Environmental Science","B.Sc.Environmental Science Course Description", "Tell me about B.Sc.Environmental Science Course Description", "ug Courses in Environmental Science for bachelor", "B.Sc.Environmental Science info", "B.Sc.ES info", "ug Courses in ES for bachelor","Details about B.Sc.Environmental Science Program","information about B.Sc.Environmental Science"],
+   "responses": ["B.Sc.Environmental Science is an undergraduate three years program that focuses on serving interdisciplinary knowledge engrossed with other Biological, Chemical, Physical and Technological Sciences.<br>It emphasis on study of not only earth's environment but planetary science along with impactful studies on its climate, diversity in ecosystem along with impact of anthropogenic activities and it's related environmental issues.<br>It inculcates students with the ability of various competitive exams for government jobs.<br>It enables the students to undertake further studies in Environmental Science that can be helpful in grabbing enormous opportunities for their career framing in private sector or industries.<br><b>notes:<br> if you need to check course duration then type ('bachelor' + 'course duration').</b>"]
+  },
+  {
+  "tag": "B.Sc.Environmental Science eligibility",
+   "patterns": ["Who can apply for B.Sc.Environmental Science?", "B.Sc.Environmental Science Application Requirements",
+     "What do I need to qualify for B.Sc.Environmental Science?", "Entry qualifications for B.Sc.Environmental Science",
+     "Admission standards for B.Sc.Environmental Science", "What are the eligibility requirements for B.Sc.Environmental Science?",
+     "Minimum requirements for B.Sc.Environmental Science", "B.Sc.Environmental Science Admission Criteria", "Who is eligible for B.Sc.Environmental Science?",
+     "What are the conditions for B.Sc.Environmental Science?", "Prerequisites for B.Sc.Environmental Science Enrollment",
+     "Criteria for Admission to B.Sc.Environmental Science", "Qualifications needed for B.Sc.Environmental Science",
+     "Eligibility for Bachelor of Science in Environmental Science", "Requirements for B.Sc.Environmental Science Admission",
+     "B.Sc.Environmental Science eligibility", "B.Sc.ES eligibility", "ES eligibility"],
+    "responses": ["A candidate must have passed 10+2 or an equivalent examination in a science stream with Chemistry as one of the subjects.<br><b>notes:<br>If you require more information, please Type ('course name' + 'info').</b>"]
+  },
+  {
+      "tag": "B.Sc.Environmental Science salient features",
+   "patterns": ["Significant aspects of B.Sc.Environmental Science program", "Prominent elements of B.Sc.Environmental Science education",
+     "Core attributes of B.Sc.Environmental Science degree", "Key aspects of B.Sc.Environmental Science", "B.Sc.Environmental Science salient features",
+     "Tell me about salient features for B.Sc.Environmental Science?", "Tell me about salient features for Environmental Science?",
+     "Tell me about salient features for ES?","B.Sc.Environmental Science salient features",
+     "Tell me about salient features for B.Sc.Environmental Science?", "Tell me about salient features for Environmental?",
+     "Tell me about salient features for Environmental Science?", "salient features for Environmental Science?",
+      "salient features for B.Sc.Environmental Science"],
+    "responses": ["Courses as per NEP 2020 of Govt. of India.<br>Curriculum as per UGC Guidelines <br> B.Sc., M.Sc. & Ph.D. Courses under the same roof.<br><b>(1)</b> Sophisticated & Well-equipped Laboratories.<br><b>(2)</b> Well-qualified & Experienced Faculties<br><b>(3)</b> Industrial Liaison for Training & Placement <br><b>(4)</b> Scholarships & Freeships available.<br><b>(5)</b> On Campus Hostel Facility available.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'fees structure')</b>"   ]
+  },
+  {
+   "tag": "B.Sc.Environmental Science curriculum",
+    "patterns": ["Overview of B.Sc.Environmental Science Studies","What is covered in B.Sc.Environmental Science Program?",
+      "Components of B.Sc.Environmental Science Curriculum", "Coursework for B.Sc.Environmental Science Degree",
+      "Details of Bachelor of Science in Environmental Science Curriculum", "Outline of Undergraduate Environmental Science Courses",
+        "B.Sc.Environmental Science Course Outline", "B.Sc.Environmental Science curriculum", "B.Sc.ES curriculum", "ES curriculum"],
+   "responses": ["<b>The program focuses on areas like:</b><br><b>(1)</b> Ecosystem and Natural Resources<br><b>(2)</b> Earth, Atmosphere and Climate change<br><b>(3)</b> Disaster Management<br><b>(4)</b> Pollution Management<br><b>(5)</b> Geo-informatics and Remote Sensing<br><b>(6)</b> Sustainable Developments & Ecotourism<br><b>(7)</b> Analytical methods for Pollutant<br><b>(8)</b> Environmental Legislation & Policies.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects')"]
+  },
+  {
+    "tag": "B.Sc.Environmental Science future prospects",
+    "patterns": ["Potential careers for B.Sc.Environmental Science graduates", "Prospects for B.Sc.Environmental Science professionals",
+      "Opportunities for B.Sc.Environmental Science alumni", "What can you do with a B.Sc.Environmental Science degree?",
+      "Employment options for B.Sc.Environmental Science holders", "Career pathways for B.Sc.Environmental Science majors",
+      "Outlook for B.Sc.Environmental Science graduates", "Future employment possibilities with a B.Sc.Environmental Science degree",
+        "Job prospects after completing Bachelor of Science in B.Sc.Environmental", "Career opportunities for B.Sc.Environmental Science graduates",
+      "B.Sc.Environmental Science Course future prospects", "B.Sc.Environmental Science future prospects","B.Sc.ES future prospects",
+      "Tell me about B.Sc.Environmental Science Course future prospects", "Tell me about B.Sc.ES Course future prospects",
+      "ES Course future prospects","B.Sc.Environmental Science future prospects", "b.sc.ES future prospects"],
+    "responses": ["B.Sc.Environmental Science opens up diversified career options in Industries, Laboratories, Central, State & Local Governing bodies & Academic/ Teaching.<br>Candidate can also pursue Master of Science in the related fields of the subject.<br><b>Some of the popular career options after B.Sc.Environmental Science includes:</b><br><b>(1)</b>Pollution Control & Monitoring Laboratories<br><b>(2)</b>Opportunities in Government Sectors viz., Forest, Geological Survey, Maritime Board, State Water & Sewage Supply Board, Urban and Rural Planning & Tourism<br><b>(3)</b> Botanical Gardens & Zoological Parks<br><b>(4)</b> Wildlife Photography & Documentation<br><b>(5)</b> Environmental Analyst<br><b>(6)</b> Opportunities through UPSC & GPSC<br><b>(7)</b> Water Treatment Plants<br><b>(8)</b> Solid Waste Management Sites<br><b>(9)</b> Teachers and Researchers<br><b>(10)</b> Industries.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'salient features')</b>"]
+  },
+  {
+       "tag": " B.Sc.Computer Science info",
+     "patterns": ["Information on B.Sc.Computer Science Degree","Bachelor's in Computer Science Program Details","B.Sc.Computer Science Course Structure","Introduction to B.Sc.Computer Science","Overview of Undergraduate Computer Science Courses","B.Sc.Computer Science Program Overview","Details of B.Sc.Computer Science Course","Description of Bachelor of Science in Computer Science","B.Sc.Computer Science Course Description", "Tell me about B.Sc.Computer Science Course Description", "ug Courses in Computer Science for bachelor", "B.Sc.Computer Science info", "B.Sc.CS info", "ug Courses in CS for bachelor","Details about B.Sc.Computer Science Program","information about B.Sc.Computer Science"],
+      "responses": [" B.Sc.Computer Science aimed at students having background of science stream and interess in pursuing study and career in the field of Computer Science.<br> This course is designed to give a strong foundation in Computer Science and specialized knowledge of topics such as Data Science, Artificial Intelligence, Web and Mobile Application Development, Computer Graphics etc.<br> The programme aims at empowering student to take up industrial practice as well as for research and real world problem solving.<br> With a B.Sc. Computer Science degree, the student will be qualified to build and maintain reliable software to address the sophisticated demands of today's market with innovative and creative approaches to problem solving.<br><b>notes:<br> if you need to check course duration then type ('bachelor' + 'course duration').</b> "]
+  },
+  {
+    "tag": "B.Sc.Computer Science eligibility",
+       "patterns": ["Who can apply for B.Sc.Computer Science?", "B.Sc.Computer Science Application Requirements",
+     "What do I need to qualify for B.Sc.Computer Science?", "Entry qualifications for B.Sc.Computer Science",
+     "Admission standards for B.Sc.Computer Science", "What are the eligibility requirements for B.Sc.Computer Science?",
+       "Minimum requirements for B.Sc.Computer Science", "B.Sc.Computer Science Admission Criteria", "Who is eligible for B.Sc.Computer Science?",
+     "What are the conditions for B.Sc.Computer Science?", "Prerequisites for B.Sc.Computer Science Enrollment",
+     "Criteria for Admission to B.Sc.Computer Science", "Qualifications needed for B.Sc.Computer Science",
+     "Eligibility for Bachelor of Science in Computer Science", "Requirements for B.Sc.Computer Science Admission",
+     "B.Sc.Computer Science eligibility", "B.Sc.CS eligibility", "CS eligibility"],
+    "responses": ["A candidate must have passed 10+2 in science stream an equivalent examination.<br>The candidate who has passed equivalent exam from other subjects or boards ( like Diploma after 10th or 10+2 vocational etc.) need to avail eligibility certificate for this programme from the Board of Equivalence (BoE) of the Sarvajanik University.<br><b>notes:<br>If you require more information, please Type ('course name' + 'info').</b>"]
+  },
+  {
+         "tag": "B.Sc.Computer Science salient features",
+   "patterns": ["Significant aspects of B.Sc.Computer Science program", "Prominent elements of B.Sc.Computer Science education",
+     "Core attributes of B.Sc.Computer Science degree", "Key aspects of B.Sc.Computer Science", "B.Sc.Computer Science salient features",
+     "Tell me about salient features for B.Sc.Computer Science?", "Tell me about salient features for Computer Science?",
+     "Tell me about salient features for CS?","B.Sc.Computer Science salient features ",
+     "Tell me about salient features for B.Sc.Computer Science?", "Tell me about salient features for B.Sc.Computer Science?",
+     "Tell me about salient features for Computer Science?", "salient features for Computer Science?",
+     "salient features for Environmental?", "salient features for B.Sc.Computer Science"],
+    "responses": ["Best performing science college in the region since 20 years<br> curriculum as per UGC guidelines<br> CBCS integrated syllabus design<br> B.Sc., M. Sc. & Ph. D. courses under the same roof.<br> Sophisticated & well-equipped laboratories.<br> Well-qualified & experienced faculties<br> Industrial  liaison for training & placement<br> Scholarships & freeships available.<br> On campus hostel facility available. <br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'fees structure')</b>"   ]
+  },
+  {
+    "tag": "B.Sc.Computer Science curriculum",
+    "patterns": ["Overview of B.Sc.Computer Science Studies","What is covered in B.Sc.Computer Science Program?",
+      "Components of B.Sc.Computer Science Curriculum", "Coursework for B.Sc.Computer Science Degree",
+      "Details of Bachelor of Science in Computer Science Curriculum", "Outline of Undergraduate Computer Science Courses",
+        "B.Sc.Computer Science Course Outline", "B.Sc.Computer Science curriculum", "B.Sc.CS curriculum", "CS curriculum"],
+    "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Core concept orientation<br><b>(2)</b> Data science and AI<br><b>(3)</b> Embedded system and IOT<br><b>(4)</b> Mobile application development<br><b>(5)</b> Software engineering<br><b>(6)</b> Computer graphics and animation<br><b>(7)</b> Java / .Net / PHP / Python programming.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects')"]
+  },
+  {
+    "tag": "B.Sc.Computer Science future prospects",
+    "patterns": ["Potential careers for B.Sc.Computer Science graduates", "Prospects for B.Sc.Computer Science professionals",
+        "Opportunities for B.Sc.Computer Science alumni", "What can you do with a B.Sc.Computer Science degree?",
+      "Employment options for B.Sc.Computer Science holders", "Career pathways for B.Sc.Computer Science majors",
+      "Outlook for B.Sc.Computer Science graduates", "Future employment possibilities with a B.Sc.Computer Science degree",
+      "Job prospects after completing Bachelor of Science in Computer Science", "Career opportunities for B.Sc.Computer Science graduates",
+      "B.Sc.Computer Science Course future prospects", "B.Sc.Computer Science future prospects","B.Sc.CS future prospects",
+      "Tell me about B.Sc.Computer Science Course future prospects", "Tell me about B.Sc.CS Course future prospects",
+      "CS Course future prospects","B.Sc.Computer Science future prospects", "b.sc.CS future prospects"],
+    "responses": ["After completing their graduations most of the students pursue master degree programs like MCA, M.Sc.Advanced Computing, M.Sc.Information Technology, M.Sc.Web and Mobile Technology, etc.<br> through which they deepen and widen their knowledge, and: <br>a) learn how to conduct advanced research <br>b) develop expertise to work in industries.<br><b>Some of the most popular career options for B.Sc.Computer Science includes:</b><br><b>(1)</b> Data Scientist<br><b>(2)</b> Web and Mobile app Developer<br><b>(3)</b> Database Administrator<br><b>(4)</b> Software Engineer/ Developer / Tester<br><b>(5)</b> Network Management<br><b>(6)</b> IT development & Support<br><b>(7)</b> Education and Training<br><b>(8)</b> Consultant, Sales, etc.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'salient features')</b>"]
+  },
+  {
+  "tag": "Pg-Courses Organic Chemistry ",
+  "patterns": ["Postgraduate Courses in Organic Chemistry ", "Pg Courses in Organic Chemistry for master", "what are course available in Organic Chemistry for masters",
+    "information about Organic Chemistry for master", "information about M.Sc.Org.Chem", "info about M.Sc.Org.Chem", "info about Org.Chem"],
+  "responses": ["M.Sc.Organic Chemistry.<br><b>notes:<br> if you need more info then type ('course name' + 'eligibility').</b>"]
+  },
+  {
+       "tag": " M.Sc.Organic Chemistry info",
+   "patterns": ["Information on M.Sc.Organic Chemistry Degree","master's in Organic Chemistry Program Details","M.Sc.Organic Chemistry Course Structure","Introduction to M.Sc.Organic Chemistry","Overview of Undergraduate Organic Chemistry Courses","M.Sc.Organic Chemistry Program Overview","Details of M.Sc.Organic Chemistry Course","Description of master of Science in Organic Chemistry","M.Sc.Organic Chemistry Course Description", "Tell me about M.Sc.Organic Chemistry Course Description", "ug Courses in Organic Chemistry for master", "M.Sc.Organic Chemistry info", "M.Sc.O-Chem info", "ug Courses in O-Chem for master", "M.Sc.Org Chem info", "ug Courses in Org Chem for master","Details about M.Sc.Organic Chemistry Program","information about M.Sc.Organic Chemistry"],
+    "responses": [" The application of Organic Chemistry is found in various fields, as most of the products we use in our day to day life are made of organic compounds<br> M.Sc. program in Organic Chemistry helps to equip and to introduce the organic fundamental subjects to the candidates, so that a strong foundation is laid<br>During the program tenure candidates study major areas in organic chemistry and all related subjects.<br>The course syllabus involves extensive lectures and laboratory sessions to ensure that candidates can connect theory to practice and apply their theoretical knowledge gained.<br><b>notes:<br> if you need to check course duration then type ('master' + 'course duration').</b>"]
+    },
+  {
+    "tag": "M.Sc.Organic Chemistry eligibility",
+   "patterns": ["Who can apply for M.Sc.Organic Chemistry?", "M.Sc.Organic Chemistry Application Requirements",
+     "What do I need to qualify for M.Sc.Organic Chemistry?", "Entry qualifications for M.Sc.Organic Chemistry",
+     "Admission standards for M.Sc.Organic Chemistry", "What are the eligibility requirements for M.Sc.Organic Chemistry?",
+     "Minimum requirements for M.Sc.Organic Chemistry", "M.Sc.Organic Chemistry Admission Criteria", "Who is eligible for M.Sc.Organic Chemistry?",
+     "What are the conditions for M.Sc.Organic Chemistry?", "Prerequisites for M.Sc.Organic Chemistry Enrollment",
+     "Criteria for Admission to M.Sc.Organic Chemistry", "Qualifications needed for M.Sc.Organic Chemistry",
+     "Eligibility for master of Science in Organic Chemistry", "Requirements for M.Sc.Organic Chemistry Admission",
+     "M.Sc.Organic Chemistry eligibility", "M.Sc.O-Chem eligibility", "O-Chem eligibility","M.Sc.Org Chem eligibility", "Org Chem eligibility"],
+    "responses": ["A candidate must have passed the M.Sc. degree examination from any recognized University or affiliated colleges with Chemistry as principal subject or equivalent.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"       ]
+    },
+
+  {
+     "tag": "M.Sc.Organic Chemistry curriculum",
+    "patterns": ["Overview of M.Sc.Organic Chemistry Studies","What is covered in M.Sc.Organic Chemistry Program?",
+      "Components of M.Sc.Organic Chemistry Curriculum", "Coursework for M.Sc.Organic Chemistry Degree",
+      "Details of master of Science in Organic Chemistry Curriculum", "Outline of Undergraduate Organic Chemistry Courses",
+      "M.Sc.Organic Chemistry Course Outline", "M.Sc.Organic Chemistry curriculum", "M.Sc.O-Chem curriculum", "O-Chem curriculum","M.Sc.Org Chem curriculum", "Org Chem curriculum"],
+    "responses": ["M.Sc.Organic Chemistry degree program focuses on subjects like:<br><b>(1)</b> Application of Green Chemistry<br><b>(2)</b> Basic Analytical Chemistry<br><b>(3)</b> Chemistry of Natural Products<br><b>(4)</b> Designing Organic Synthesis<br><b>(5)</b> Food Chemistry<br><b>(6)</b> Forensic Chemistry & Toxicology<br><b>(7)</b> Industrial Processes, Waste Management & Quality Control<br><b>(8)</b> Instrumentation & Analytical Techniques<br><b>(9)</b> Organic Spectroscopy<br><b>(10)</b> Organic Synthesis & Mechanism<br><b>(11)</b> Theoretical Organic Chemistry <br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b>"       ]
+    },
+  {
+     "tag": "M.Sc.Organic Chemistry future prospects",
+    "patterns": ["Potential careers for M.Sc.Organic Chemistry graduates", "Prospects for M.Sc.Organic Chemistry professionals",
+      "Opportunities for M.Sc.Organic Chemistry alumni", "What can you do with a M.Sc.Organic Chemistry degree?",
+      "Employment options for M.Sc.Organic Chemistry holders", "Career pathways for M.Sc.Organic Chemistry majors",
+      "Outlook for M.Sc.Organic Chemistry graduates", "Future employment possibilities with a M.Sc.Organic Chemistry degree",
+      "Job prospects after completing master of Science in Organic Chemistry", "Career opportunities for M.Sc.Organic Chemistry graduates",
+      "M.Sc.Organic Chemistry Course future prospects", "M.Sc.Organic Chemistry future prospects","M.Sc.O-Chem future prospects","M.Sc.Org Chem future prospects",
+      "Tell me about M.Sc.Organic Chemistry Course future prospects", "Tell me about M.Sc.O-Chem Course future prospects","Tell me about M.Sc.Org Chem Course future prospects",
+      "O-Chem Course future prospects","M.Sc.Organic Chemistry future prospects", "M.sc.O-Chem future prospects", "M.sc.Org Chem future prospects"],
+    "responses": ["M.Sc.Organic Chemistry provides platform to candidates to work in the diversified field.<br><br><b>Some of the job roles available for M.Sc.Organic Chemistry candidates includes:</b><br><b>(1)</b> Analytical Chemistry Associate<br><b>(2)</b> Chemistry Project Assistant<br><b>(3)</b> Manager QC<br><b>(4)</b> Marketing Executive - Organic Products<br><b>(5)</b> Organic Chemistry Professor<br><b>(6)</b> Research Associate<br><b>(7)</b> Research Chemist<br><b>(8)</b> Synthetic Organic Chemist.<br><b>notes:<br> if you are looking for a salient features then type ('course name' + 'salient features').</b>" ]
+    },
+  {
+  "tag":"M.Sc.Organic Chemistry salient futures",
+    "patterns": ["M.Sc.Organic Chemistry salient future ", "M.Sc.Org.Chem salient future"],
+    "responses": ["<b>(*)</b> Best performing science college in the region since 20 years<br><b>(*)</b> Currieulum as per UGC guidelines<br><b>(*)</b> CBCS integrated syllabus design<br><b>(*)</b> M.Sc., M. Sc. & Ph. D. courses under the same roof.<br><b>(*)</b> Sophisticated & well-equipped laboratories.<br><b>(*)</b> Well-qualified & experienced faculties<br><b>(*)</b> Industrial  liaison for training & placement<br><b>(*)</b> Scholarships & freeships available.<br><b>(*)</b> On campus hostel facility available. <br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'fees structure').</b>" ]
+    },
+   {
+  "tag": "Pg-Courses Microbiology ",
+  "patterns": ["Postgraduate Courses in Microbiology ", "Postgraduate Courses in Micro", "Pg Courses in Microbiology for master", "Pg Courses in Micro for master", "what are course available in Microbiology for masters", "what are course available in Micro for masters", "information about Microbiology for master", "information about M.sc.Micro", "info about M.sc.Micro"],
+  "responses": ["M.Sc.Microbiology.<br> M.Sc.Industrial Microbiology.<br>M.Sc.Medical Laboratory Technology<br><b>notes:<br> if you need more info then type ('course name' + 'eligibility'). "]
+   },
+  {
+    "tag": " M.Sc.Microbiology info",
+   "patterns": ["Information on M.Sc.Microbiology Degree","master's in Microbiology Program Details","M.Sc.Microbiology Course Structure","Introduction to M.Sc.Microbiology","Overview of Undergraduate Microbiology Courses","M.Sc.Microbiology Program Overview","Details of M.Sc.Microbiology Course","Description of master of Science in Microbiology","M.Sc.Microbiology Course Description", "Tell me about M.Sc.Microbiology Course Description", "pg Courses in Microbiology for master", "M.Sc.Microbiology info", "M.Sc.MB info", "pg Courses in MB for master","Details about M.Sc.Microbiology Program","information about M.Sc.Microbiology"],
+   "responses": ["add karvanu baki che"]
+  },
+  {
+  "tag": "M.Sc.Microbiology eligibility",
+   "patterns": ["Who can apply for M.Sc.Microbiology?", "M.Sc.Microbiology Application Requirements",
+     "What do I need to qualify for M.Sc.Microbiology?", "Entry qualifications for M.Sc.Microbiology",
+     "Admission standards for M.Sc.Microbiology", "What are the eligibility requirements for M.Sc.Microbiology?",
+     "Minimum requirements for M.Sc.Microbiology", "M.Sc.Microbiology Admission Criteria", "Who is eligible for M.Sc.Microbiology?",
+     "What are the conditions for M.Sc.Microbiology?", "Prerequisites for M.Sc.Microbiology Enrollment",
+     "Criteria for Admission to M.Sc.Microbiology", "Qualifications needed for M.Sc.Microbiology",
+     "Eligibility for master of Science in Microbiology", "Requirements for M.Sc.Microbiology Admission", "M.Sc.Microbiology eligibility", "M.Sc.MB eligibility"],
+    "responses": ["A candidate must have passed the M.Sc. degree examination from any recognized University or affiliated colleges with biological science as principal subject.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"]
+  },
+
+  {
+      "tag": "M.Sc.Microbiology curriculum",
+    "patterns": ["Overview of M.Sc.Microbiology Studies","What is covered in M.Sc.Microbiology Program?",
+      "Components of M.Sc.Microbiology Curriculum", "Coursework for M.Sc.Microbiology Degree",
+      "Details of master of Science in Microbiology Curriculum", "Outline of Postgraduate Microbiology Courses",
+      "M.Sc.Microbiology Course Outline", "M.Sc.Microbiology curriculum", "M.Sc.MB curriculum"],
+        "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Principles of Microbiology & Microbial Diversity<br><b>(2)</b> Agriculture & Environmental Microbiology<br><b>(3)</b> Advances in molecular biology & Genetic Engineering<br><b>(4)</b> Advances in immunology and molecular pathogenesis<br><b>(5)</b> Microbial Physiology & Metabolism<br><b>(6)</b> Enzyme Technology & Protein Engineering<br><b>(7)</b> Pharmaceutical Microbiology & Drug Development.<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b>"]
+  },
+  {
+    "tag": "M.Sc.Microbiology future prospects",
+      "patterns": ["Potential careers for M.Sc.Microbiology graduates", "Prospects for M.Sc.Microbiology professionals",
+      "Opportunities for M.Sc.Microbiology alumni", "What can you do with a M.Sc.Microbiology degree?",
+        "Employment options for M.Sc.Microbiology holders", "Career pathways for M.Sc.Microbiology majors",
+      "Outlook for M.Sc.Microbiology graduates", "Future employment possibilities with a M.Sc.Microbiology degree",
+      "Job prospects after completing master of Science in Microbiology", "Career opportunities for M.Sc.Microbiology graduates",
+      "M.Sc.Microbiology Course future prospects", "M.Sc.Microbiology future prospects","M.Sc.MB future prospects",
+      "Tell me about M.Sc.Microbiology Course future prospects", "Tell me about M.Sc.MB Course future prospects","M.Sc.Microbiology future prospects", "M.Sc.MB future prospects"],
+      "responses": ["M.Sc.Microbiology provides platform to candidates to work in the diversified field.<br><br><b>Some of the job roles available for M.Sc.Microbiology candidates includes:</b><br><b>(1)</b> Research Institutions<br><b>(2)</b> Pharmaceutical Industries<br><b>(3)</b> Food and beverage Industries<br><b>(4)</b> Clinical/Analytical laboratories<br><b>(5)</b> Water/sewage treatment plants<br><b>(6)</b> Agro Industries<br><b>(7)</b> Dairy Industries<br><b>(8)</b> Government projects<br><b>(9)</b> Academics<br><b>(10)</b> Entrepreneur<br><b>(11)</b> Research Development Analyst<br><b>(12)</b> Quality control Executive<br><b>(13)</b> Microbiological auditor<br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>" ]
+    },
+  {
+          "tag": " M.Sc.Industrial Microbiology info",
+        "patterns": ["Information on M.Sc.Industrial Microbiology Degree","master's in Microbiology Program Details",
+          "M.Sc.Industrial Microbiology Course Structure","Introduction to M.Sc.Industrial Microbiology",
+          "Overview of Undergraduate Microbiology Courses","M.Sc.Industrial Microbiology Program Overview",
+          "Details of M.Sc.Industrial Microbiology Course","Description of master of Science in Microbiology",
+          "M.Sc.Industrial Microbiology Course Description", "Tell me about M.Sc.Industrial Microbiology Course Description",
+          "pg Courses in Industrial Microbiology for master", "M.Sc.Industrial Microbiology info", "M.Sc.IM info", "pg Courses in IM for master", "M.Sc.Ind Micro info", "pg Courses in Ind Micro for master","Details about M.Sc.Industrial Microbiology Program","information about M.Sc.Industrial Microbiology"],
+      "responses": ["add karvanu baki che"]
+  },
+  {
+      "tag": "M.Sc.Industrial Microbiology eligibility",
+   "patterns": ["Who can apply for M.Sc.Industrial Microbiology?", "M.Sc.Industrial Microbiology Application Requirements",
+     "What do I need to qualify for M.Sc.Industrial Microbiology?", "Entry qualifications for M.Sc.Industrial Microbiology",
+     "Admission standards for M.Sc.Industrial Microbiology", "What are the eligibility requirements for M.Sc.Industrial Microbiology?",
+     "Minimum requirements for M.Sc.Industrial Microbiology", "M.Sc.Industrial Microbiology Admission Criteria", "Who is eligible for M.Sc.Industrial Microbiology?",
+     "What are the conditions for M.Sc.Industrial Microbiology?", "Prerequisites for M.Sc.Industrial Microbiology Enrollment",
+     "Criteria for Admission to M.Sc.Industrial Microbiology", "Qualifications needed for M.Sc.Industrial Microbiology",
+     "Eligibility for master of Science in Industrial Microbiology", "Requirements for M.Sc.Industrial Microbiology Admission", "M.Sc.Industrial Microbiology eligibility", "M.Sc.IM eligibility", "IM eligibility","M.Sc.Ind Micro eligibility", "Ind Micro eligibility"],
+      "responses": ["A candidate must have passed the M.Sc. degree examination from any recognized University or affiliated colleges with biological science as principal subject.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"]
+  },
+
+  {
+     "tag": "M.Sc.Industrial Microbiology curriculum",
+    "patterns": ["Overview of M.Sc.Industrial Microbiology Studies","What is covered in M.Sc.Industrial Microbiology Program?",
+      "Components of M.Sc.Industrial Microbiology Curriculum", "Coursework for M.Sc.Industrial Microbiology Degree",
+      "Details of master of Science in Industrial Microbiology Curriculum", "Outline of Undergraduate Industrial Microbiology Courses",
+      "M.Sc.Industrial Microbiology Course Outline", "M.Sc.Industrial Microbiology curriculum", "M.Sc.IM curriculum", "IM curriculum","M.Sc.Ind Micro curriculum", "Ind Micro curriculum"],
+      "responses": ["<b>The program focuses on areas such as:</b><br><br><b>(1)</b> Principles of Industrial Microbiology<br><b>(2)</b> Fermentation Technology<br><b>(3)</b> Advances in molecular biology & Genetic Engineering<br><b>(4)</b> Principles of Biochemical Engineering & Bioseparation<br><b>(5)</b> Instrumentation and analytical techniques<br><b>(6)</b> Microbial products<br><b>(7)</b> Enzyme & Immuno Technology<br><b>(8)</b> cGMP & Quality Assurance <br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b>"]
+  },
+  {
+    "tag": "M.Sc.Industrial Microbiology future prospects",
+    "patterns": ["Potential careers for M.Sc.Industrial Microbiology graduates", "Prospects for M.Sc.Industrial Microbiology professionals",
+      "Opportunities for M.Sc.Industrial Microbiology alumni", "What can you do with a M.Sc.Industrial Microbiology degree?",
+      "Employment options for M.Sc.Industrial Microbiology holders", "Career pathways for M.Sc.Industrial Microbiology majors",
+      "Outlook for M.Sc.Industrial Microbiology graduates", "Future employment possibilities with a M.Sc.Industrial Microbiology degree",
+      "Job prospects after completing master of Science in Industrial Microbiology", "Career opportunities for M.Sc.Industrial Microbiology graduates",
+      "M.Sc.Industrial Microbiology Course future prospects", "M.Sc.Industrial Microbiology future prospects","M.Sc.IM future prospects","M.Sc.Ind Micro future prospects",
+      "Tell me about M.Sc.Industrial Microbiology Course future prospects", "Tell me about M.Sc.IM Course future prospects","Tell me about M.Sc.Ind Micro Course future prospects",
+      "IM Course future prospects","Ind Micro Course future prospects","M.Sc.Industrial Microbiology future prospects", "M.Sc.IM future prospects", "M.Sc.Ind Micro future prospects"],
+      "responses": ["M.Sc.Industrial Microbiology provides platform to candidates to work in the diversified field.<br><br><b>Some of the job roles available for M.Sc.Industrial Microbiology candidates includes:</b><br><br><br><b>(1)</b> Pharmaceutical Industries<br><b>(2)</b> Food and beverage Industries<br><b>(3)</b> Clinical/Analytical laboratories<br><b>(4)</b> Water/sewage treatment plants<br><b>(5)</b> Agro Industries<br><b>(6)</b> Dairy Industries<br><b>(7)</b> Government projects<br><b>(8)</b> Entrepreneur<br><b>(9)</b> Quality control Executive<br><b>(10)</b> Microbiological auditor <br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>"]
+  },
+  {
+          "tag": "M.Sc.Medical Laboratory Technology info",
+        "patterns": ["Information on M.Sc.Medical Laboratory Technology Degree","master's in Medical Laboratory Technology Program Details",
+          "M.Sc.Industrial Medical Laboratory Technology Course Structure","Introduction to M.Sc.Medical Laboratory Technology",
+          "Overview of Undergraduate Medical Laboratory Technology Courses","M.Sc.Medical Laboratory Technology Program Overview",
+          "Details of M.Sc.Medical Laboratory Technology Course","Description of master of Science in Medical Laboratory Technology",
+          "M.Sc.Medical Laboratory Technology Course Description", "Tell me about M.Sc.Medical Laboratory Technology Course Description",
+          "pg Courses in M.Sc.Medical Laboratory Technology for master", "M.Sc.Medical Laboratory Technology info", "M.Sc.MLT info", "pg Courses in MLT for master",
+          "M.Sc.Med Lab Tech info", "pg Courses in Med Lab Tech for master","Details about M.Sc.Medical Laboratory Technology Program",
+          "information about M.Sc.Medical Laboratory Technology"],
+      "responses": ["baki che add karvanu"]
+    },
+  {
+     "tag": "M.Sc.Medical Laboratory Technology eligibility",
+   "patterns": ["Who can apply for M.Sc.Medical Laboratory Technology?", "M.Sc.Medical Laboratory Technology Application Requirements",
+     "What do I need to qualify for M.Sc.Medical Laboratory Technology?", "Entry qualifications for M.Sc.Medical Laboratory Technology",
+     "Admission standards for M.Sc.Medical Laboratory Technology", "What are the eligibility requirements for M.Sc.Medical Laboratory Technology?",
+     "Minimum requirements for M.Sc.Medical Laboratory Technology", "M.Sc.Medical Laboratory Technology Admission Criteria", "Who is eligible for M.Sc.Medical Laboratory Technology?",
+     "What are the conditions for M.Sc.Medical Laboratory Technology?", "Prerequisites for M.Sc.Medical Laboratory Technology Enrollment",
+     "Criteria for Admission to M.Sc.Medical Laboratory Technology", "Qualifications needed for M.Sc.Medical Laboratory Technology",
+     "Eligibility for master of Science in Medical Laboratory Technology", "Requirements for M.Sc.Medical Laboratory Technology Admission", "M.Sc.Medical Laboratory Technology eligibility",
+     "M.Sc.MLT eligibility", "MLT eligibility","M.Sc.Med Lab Tech eligibility", "Med Lab Tech eligibility"],
+      "responses": ["A candidate must have passed the M.Sc. degree examination from any recognized University or affiliated colleges with biological science as principal subject.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"]
+    },
+
+  {
+
+     "tag": "M.Sc.Medical Laboratory Technology curriculum",
+     "patterns": ["Overview ofM.Sc.Medical Laboratory Technology Studies","What is covered inM.Sc.Medical Laboratory Technology Program?", "Coursework for M.Sc.Medical Laboratory Technology Degree",
+      "Details of master of Science in Medical Laboratory Technology Curriculum", "Outline of Undergraduate Medical Laboratory Technology Courses",
+      "M.Sc.Medical Laboratory Technology Course Outline", "M.Sc.Medical Laboratory curriculum", "M.Sc.MLT curriculum", "MLT curriculum","M.Sc.Med Lab Tech curriculum", "Med Lab Tech curriculum"],
+     "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Principles of Clinical Bacteriology, Virology & Mycology<br><b>(2)</b> Human Anatomy & Physilogy<br><b>(3)</b> Haematology & Blood Transfusion<br><b>(4)</b> Clinical Biochemistry<br><b>(5)</b> Histopathology & Parasitology<br><b>(6)</b> Advances in Immunology<br><b>(7)</b> Advances in Diagnostic Microbiology<br><b>(8)</b> Clinical Laboratory Management"]
+    },
+  {
+          "tag": "M.Sc.Medical Laboratory Technology future prospects",
+    "patterns": ["Potential careers for M.Sc.Medical Laboratory Technology graduates", "Prospects for M.Sc.Medical Laboratory Technology professionals",
+      "Opportunities for M.Sc.Medical Laboratory Technology alumni", "What can you do with aM.Sc.Medical Laboratory Technology degree?",
+      "Employment options for M.Sc.Medical Laboratory Technology holders", "Career pathways for M.Sc.Medical Laboratory Technology majors",
+      "Outlook for M.Sc.Medical Laboratory Technology graduates", "Future employment possibilities with aM.Sc.Medical Laboratory Technology degree",
+      "Job prospects after completing master of Science in Medical Laboratory Technology", "Career opportunities for M.Sc.Medical Laboratory Technology graduates",
+      "M.Sc.Medical Laboratory Technology Course future prospects", "M.Sc.Medical Laboratory Technology future prospects","M.Sc.MLT future prospects","M.Sc.Med Lab Tech future prospects",
+      "Tell me aboutM.Sc.Medical Laboratory Technology Course future prospects", "Tell me about M.Sc.MLT Course future prospects","Tell me about M.Sc.Med Lab Tech Course future prospects",
+      "MLT Course future prospects","Med Lab Tech Course future prospects","M.Sc.Medical Laboratory Technology future prospects", "M.Sc.MLT future prospects", "M.Sc.Med Lab Tech future prospects"],
+      "responses": ["M.Sc.Medical Laboratory Technology provides platform to candidates to work in the diversified field.<br><br><b>Some of the job roles available for M.Sc.Medical Laboratory Technology candidates includes:</b><br><br><b>(1)</b>Health care Administrator<br><b>(2)</b> Natural Resources & Management<br><b>(3)</b> Lab Technician<br><b>(4)</b> Drug Safety Associate<br><b>(5)</b> Medical Technologists<br><b>(6)</b> Clinical Reviewer<br><b>(7)</b> Clinical Data Associate<br><b>(8)</b> Clinical Research Executive<br><b>(9)</b> Government projects<br><b>(10)</b> Research Institutions<br><b>(11)</b> Academics <br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>"]
+    },
+  {
+     "tag": "Pg-Courses Computer Science",
+    "patterns": ["Postgraduate Courses in Computer Science ", "Postgraduate Courses in CS", "Pg Courses in Computer Science for master", "Pg Courses in CS for master", "what are course available in Computer Science for masters", "information about Computer Science for master", "information about CS for master", "information about M.sc.Computer Science", "information about M.sc.CS"],
+    "responses": ["M.Sc.Information Technology.<br>M.Sc.Web and Mobile Technology.<br> M.Sc.Advanced Computing<br>If you require more information, please Type 'course name info' ."]
+  },
+  {
+    "tag": "M.Sc.Information Technology info",
+        "patterns": ["Information on M.Sc.Information Technology Degree","master's in Information Technology Program Details",
+          "M.Sc.Information Technology Course Structure","Introduction to M.Sc.Information Technology",
+          "Overview of postgraduate Information Technology Courses","M.Sc.Information Technology Program Overview",
+          "Details of M.Sc.Information Technology Course","Description of master of Science in Information Technology",
+          "M.Sc.Information Technology Course Description", "Tell me about M.Sc.Information Technology Course Description",
+          "pg Courses in Information Technology for master", "M.Sc.Information Technology info", "M.Sc.IT info",
+          "pg Courses in Information Technology for master","Details about M.Sc.Information Technology Program",
+          "information about M.Sc.Information Technology"],
+    "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b>Augmented and Virtual Reality<br><b>(2)</b> Cyber Security and Forensics<br><b>(3)</b> IOT and Game Development<br><b>(4)</b> Web and Mobile Programming<br><b>(5)</b> Big Scale System Development <br><b>notes:<br> if you need to check course duration then type ('bachelor' + 'course duration').</b>"]
+    },
+  {
+        "tag": "M.Sc.Information Technology eligibility",
+   "patterns": ["Who can apply for M.Sc.Information Technology?", "M.Sc.Information Technology Application Requirements",
+     "What do I need to qualify for M.Sc.Information Technology?", "Entry qualifications for M.Sc.Information Technology",
+     "Admission standards for M.Sc.Information Technology", "What are the eligibility requirements for M.Sc.Information Technology?",
+     "Minimum requirements for M.Sc.Information Technology", "M.Sc.Information Technology Admission Criteria", "Who is eligible for M.Sc.Information Technology?",
+     "What are the conditions for M.Sc.Information Technology?", "Prerequisites for M.Sc.Information Technology Enrollment",
+     "Criteria for Admission to M.Sc.Information Technology", "Qualifications needed for M.Sc.Information Technology",
+     "Eligibility for master of Science in Information Technology", "Requirements for M.Sc.Information Technology Admission", "M.Sc.Information Technology eligibility", "M.Sc.IT eligibility", "Information Technology eligibility"],
+      "responses": ["Bachelor's degree in Computer Science / Computer Applications / Information Technology / Cyber Security/ Data Science /IoT / Bigdata / AI / Computer Engineering / Electronics Engineering / Electronics and Communication engineering or an equivalent examination.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"       ]
+    },
+  {
+       "tag": "M.Sc.Information Technology curriculum",
+    "patterns": ["Overview of M.Sc.Information Technology Studies","What is covered inM.Sc.Information Technology Program?",
+      "Components of M.Sc.Information Technology Curriculum", "Coursework for M.Sc.Information Technology Degree",
+      "Details of master of Science in Information Technology Curriculum", "Outline of postgraduate Information Technology Courses",
+      "M.Sc.Information Technology Course Outline", "M.Sc.Information Technology curriculum", "M.Sc.IT curriculum", "Information Technology curriculum"],
+      "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Augmented and Virtual Reality<br><b>(2)</b> Cyber Security and Forensics<br><b>(3)</b> IOT and Game Development<br><b>(4)</b> Web and Mobile Programming<br><b>(5)</b> Big Scale System Development <br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b>"]
+    },
+  {
+       "tag": "M.Sc.Information Technology future prospects",
+    "patterns": ["Potential careers for M.Sc.Information Technology graduates", "Prospects for M.Sc.Information Technology professionals",
+          "Opportunities for M.Sc.Information Technology alumni", "What can you do with aM.Sc.Information Technology degree?",
+      "Employment options for M.Sc.Information Technology holders", "Career pathways for M.Sc.Information Technology majors",
+      "Outlook for M.Sc.Information Technology graduates", "Future employment possibilities with aM.Sc.Information Technology degree",
+      "Job prospects after completing master of Science in Information Technology", "Career opportunities for M.Sc.Information Technology graduates",
+        "M.Sc.Information Technology Course future prospects", "M.Sc.Information Technology future prospects","M.Sc.IT future prospects",
+      "Tell me aboutM.Sc.Information Technology Course future prospects", "Tell me about M.Sc.IT Course future prospects",
+      "Information Technology Course future prospects","M.Sc.IT future prospects"],
+      "responses": ["Design & implement appropriate IT driven solutions to satisfy the needs of modern business organizations.<br>The elective groups offering specialized career opportunities to fulfill career goals and ambitions in:<br><br><b>(1)</b>  Visualization group (e.g. Data visualization, Augmented and Virtual Reality etc.)<br><br><b>(2)</b> Information Security group (e.g. Cyber Security & Forensics, Blockchain etc. <br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>"]
+    },
+{
+     "tag": " M.Sc.Web and Mobile Technology info",
+   "patterns": ["Information on M.Sc.Web and Mobile Technology Degree","master's in Web and Mobile Technology Program Details",
+     "M.Sc.Web and Mobile Technology Course Structure","Introduction to M.Sc.Web and Mobile Technology",
+     "Overview of Undergraduate Web and Mobile Technology Courses","M.Sc.Web and Mobile Technology Program Overview",
+     "Details of M.Sc.Web and Mobile Technology Course","Description of master's of Science in Web and Mobile Technology",
+     "M.Sc.Web and Mobile Technology Course Description", "Tell me about M.Sc.Web and Mobile Technology Course Description",
+     "pg Courses in Web and Mobile Technology for master", "M.Sc.Web and Mobile Technology info", "M.Sc.WMT info", "pg Courses in WMT for master",
+     "M.Sc.Web-Mobile Tech info", "pg Courses in Web-Mobile Tech for master","Details about M.Sc.Web and Mobile Technology Program",
+     "information about M.Sc.Web and Mobile Technology"],
+       "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Web and Mobile System Development<br><b>(2)</b> Advanced Web Scripting<br><b>(3)</b> Cloud Based Development<br><b>(4)</b> Game Development & AR VR<br><b>(5)</b> IOT and Data Visualization <br><b>notes:<br> if you need to check course duration then type ('bachelor' + 'course duration').</b>"]
+    },
+  {
+       "tag": "M.Sc.Web and Mobile Technology eligibility",
+   "patterns": ["Who can apply for M.Sc.Web and Mobile Technology?", "M.Sc.Web and Mobile Technology Application Requirements",
+     "What do I need to qualify for M.Sc.Web and Mobile Technology?", "Entry qualifications for M.Sc.Web and Mobile Technology",
+     "Admission standards for M.Sc.Web and Mobile Technology", "What are the eligibility requirements for M.Sc.Web and Mobile Technology?",
+     "Minimum requirements for M.Sc.Web and Mobile Technology", "M.Sc.Web and Mobile Technology Admission Criteria", "Who is eligible for M.Sc.Web and Mobile Technology?",
+     "What are the conditions for M.Sc.Web and Mobile Technology?", "Prerequisites for M.Sc.Web and Mobile Technology Enrollment",
+     "Criteria for Admission to M.Sc.Web and Mobile Technology", "Qualifications needed for M.Sc.Web and Mobile Technology",
+     "Eligibility for master's of Science in Web and Mobile Technology", "Requirements for M.Sc.Web and Mobile Technology Admission",
+     "M.Sc.Web and Mobile Technology eligibility", "M.Sc.WMT eligibility", "WMT eligibility","M.Sc.Web-Mobile Tech eligibility", "Web-Mobile Tech eligibility"],
+       "responses": ["Bachelor’s degree in Computer Science / Computer Applications / Information Technology / Cyber Security/ Data Science /IoT / Bigdata / AI / Computer Engineering / Electronics Engineering / Electronics and Communication engineering or an equivalent examination.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b> "]
+},
+   {
+ "tag": "M.Sc.Web and Mobile Technology curriculum",
+    "patterns": ["Overview of M.Sc.Web and Mobile Technology Studies","What is covered in M.Sc.Web and Mobile Technology Program?",
+      "Components of M.Sc.Web and Mobile Technology Curriculum", "Coursework for M.Sc.Web and Mobile Technology Degree",
+      "Details of master's of Science in Web and Mobile Technology Curriculum", "Outline of Undergraduate Web and Mobile Technology Courses",
+      "M.Sc.Web and Mobile Technology Course Outline", "M.Sc.Web and Mobile Technology curriculum", "M.Sc.WMT curriculum", "WMT curriculum","M.Sc.Web-Mobile Tech curriculum", "Web-Mobile Tech curriculum"],
+      "responses": ["<b>The program focuses on areas such as:</b><br>Web and Mobile System Development<br><b>(1)</b> Advanced Web Scripting<br><b>(2)</b> Cloud Based Development<br><b>(3)</b> Game Development & AR VR<br><b>(4)</b> IOT and Data Visualization<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b> "]
+},
+   {
+      "tag": "M.Sc.Web and Mobile Technology future prospects",
+    "patterns": ["Potential careers for M.Sc.Web and Mobile Technology graduates", "Prospects for M.Sc.Web and Mobile Technology professionals",
+      "Opportunities for M.Sc.Web and Mobile Technology alumni", "What can you do with a M.Sc.Web and Mobile Technology degree?",
+      "Employment options for M.Sc.Web and Mobile Technology holders", "Career pathways for M.Sc.Web and Mobile Technology majors",
+      "Outlook for M.Sc.Web and Mobile Technology graduates", "Future employment possibilities with a M.Sc.Web and Mobile Technology degree",
+      "Job prospects after completing master of Science in Web and Mobile Technology", "Career opportunities for M.Sc.Web and Mobile Technology graduates",
+      "M.Sc.Web and Mobile Technology Course future prospects", "M.Sc.Web and Mobile Technology future prospects","M.Sc.WMT future prospects","M.Sc.Web-Mobile Tech future prospects",
+      "Tell me about M.Sc.Web and Mobile Technology Course future prospects", "Tell me about M.Sc.WMT Course future prospects","Tell me about M.Sc.Web-Mobile Tech Course future prospects",
+      "WMT Course future prospects","M.Sc.Web and Mobile Technology future prospects", "M.sc.WMT future prospects", "M.sc.Web-Mobile Tech future prospects"],
+        "responses": ["Providing firm grounding in strategic web development skills, with a specific focus on mobile development and user experience.<br>The elective groups offering specialized career opportunities to fulfill career goals and ambitions in:<br><br><b>(1)</b> Visual user experience group (e.g. Game Development & AR VR)<br><br><b>(2)</b> IOT and data processing group (e.g. IOT and Data visualization) <br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>"]
+},
+  {
+      "tag": " M.Sc.Advanced Computing info",
+   "patterns": ["Information on M.Sc.Advanced Computing Degree","master's in Advanced Computing Program Details",
+     "M.Sc.Advanced Computing Course Structure",
+     "Introduction to M.Sc.Advanced Computing","Overview of Undergraduate Advanced Computing Courses","M.Sc.Advanced Computing Program Overview",
+     "Details of M.Sc.Advanced Computing Course","Description of master's of Science in Advanced Computing","M.Sc.Advanced Computing Course Description",
+     "Tell me about M.Sc.Advanced Computing Course Description", "pg Courses in Advanced Computing for master", "M.Sc.Advanced Computing info",
+     "M.Sc.AdvComp info", "pg Courses in AdvComp for master", "M.Sc.Adv Computing info", "pg Courses in Adv Computing for master",
+     "Details about M.Sc.Advanced Computing Program","information about M.Sc.Advanced Computing"],
+   "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Artificial Intelligence<br><b>(2)</b> Data Science and Machine Learning<br><b>(3)</b> Big data and Analytics<br><b>(4)</b> Artificial Neural Network and Deep Learning<br><b>(5)</b>Al and Data Science Application Areas"]
+    },
+  {
+    "tag": "M.Sc.Advanced Computing eligibility",
+   "patterns": ["Who can apply for M.Sc.Advanced Computing?", "M.Sc.Advanced Computing Application Requirements",
+     "What do I need to qualify for M.Sc.Advanced Computing?", "Entry qualifications for M.Sc.Advanced Computing",
+     "Admission standards for M.Sc.Advanced Computing", "What are the eligibility requirements for M.Sc.Advanced Computing?",
+     "Minimum requirements for M.Sc.Advanced Computing", "M.Sc.Advanced Computing Admission Criteria", "Who is eligible for M.Sc.Advanced Computing?",
+     "What are the conditions for M.Sc.Advanced Computing?", "Prerequisites for M.Sc.Advanced Computing Enrollment",
+     "Criteria for Admission to M.Sc.Advanced Computing", "Qualifications needed for M.Sc.Advanced Computing",
+     "Eligibility for master's of Science in Advanced Computing", "Requirements for M.Sc.Advanced Computing Admission",
+     "M.Sc.Advanced Computing eligibility", "M.Sc.AdvComp eligibility", "AdvComp eligibility","M.Sc.Adv Computing eligibility", "Adv Computing eligibility"],
+      "responses": ["Bachelor's degree in Computer Science <br><b>(1)</b> Computer Applications <br><b>(2)</b> Information Technology <br><b>(3)</b> Cyber Security <br><b>(4)</b> Data Science <br><b>(5)</b> IoT <br><b>(6)</b> Bigdata <br><b>(7)</b> AI <br><b>(8)</b> Computer Engineering <br><b>(9)</b> Electronics Engineering <br><b>(10)</b> Electronics and Communication engineering or an equivalent examination. <br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"]
+    },
+  {
+    "tag": "M.Sc.Advanced Computing curriculum",
+    "patterns": ["Overview of M.Sc.Advanced Computing Studies","What is covered in M.Sc.Advanced Computing Program?",
+      "Components of M.Sc.Advanced Computing Curriculum", "Coursework for M.Sc.Advanced Computing Degree",
+      "Details of master of Science in Advanced Computing Curriculum", "Outline of Undergraduate Advanced Computing Courses",
+      "M.Sc.Advanced Computing Course Outline", "M.Sc.Advanced Computing curriculum", "M.Sc.AdvComp curriculum", "AdvComp curriculum","M.Sc.Adv Computing curriculum", "Adv Computing curriculum"],
+     "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Artificial Intelligence<br><b>(2)</b> Data Science and Machine Learning<br><b>(3)</b> Big data and Analytics<br><b>(4)</b> Artificial Neural Network and Deep Learning<br><b>(5)</b> AI and Data Science Application Areas <br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b>"]
+    },
+  {
+    "tag": "M.Sc.Advanced Computing future prospects",
+    "patterns": ["Potential careers for M.Sc.Advanced Computing graduates", "Prospects for M.Sc.Advanced Computing professionals",
+      "Opportunities for M.Sc.Advanced Computing alumni", "What can you do with a M.Sc.Advanced Computing degree?",
+      "Employment options for M.Sc.Advanced Computing holders", "Career pathways for M.Sc.Advanced Computing majors",
+      "Outlook for M.Sc.Advanced Computing graduates", "Future employment possibilities with a M.Sc.Advanced Computing degree",
+      "Job prospects after completing master of Science in Advanced Computing", "Career opportunities for M.Sc.Advanced Computing graduates",
+      "M.Sc.Advanced Computing Course future prospects", "M.Sc.Advanced Computing future prospects","M.Sc.AdvComp future prospects","M.Sc.Adv Computing future prospects",
+      "Tell me about M.Sc.Advanced Computing Course future prospects", "Tell me about M.Sc.AdvComp Course future prospects","Tell me about M.Sc.Adv Computing Course future prospects",
+      "AdvComp Course future prospects","M.Sc.Advanced Computing future prospects", "M.sc.AdvComp future prospects", "M.sc.Adv Computing future prospects"],
+      "responses": ["Career-orientation towards development and applications in industry, as well as in a research career either in the industrial or academic sector.<br>The elective groups offering specialized career opportunities to fulfill career goals and ambitions in:<br><br><b>(1)</b> AI Application areas (NLP, Robotics etc.)<br><br><b>(2)</b>.Data Science application areas (e.g. Data visualization, Social media mining and analytics) <br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>"]
+    },
+  {
+  "tag": "Pg-Courses Biotechnology ",
+  "patterns": ["Postgraduate Courses in Biotechnology?","what are course available in Biotechnology for masters?", "information about Biotechnology for master?", "information about M.sc.Biotechnology"],
+  "responses": ["M.Sc.Biotechnology.<br> M.Sc.Genetics.<br> M.Sc.Medical Biotechnology <br><b>notes:<br> if you need more info then type ('course name' + 'eligibility').</b>"]
+  },
+  {
+     "tag": " M.Sc.Biotechnology info",
+   "patterns": ["Information on M.Sc.Biotechnology Degree","master's in Biotechnology Program Details",
+     "M.Sc.Biotechnology Course Structure","Introduction to M.Sc.Biotechnology","Overview of Postgraduate Biotechnology Courses",
+     "M.Sc.Biotechnology Program Overview","Details of M.Sc.Biotechnology Course","Description of master's of Science in Biotechnology",
+     "M.Sc.Biotechnology Course Description", "Tell me about M.Sc.Biotechnology Course Description", "pg Courses in Biotechnology for master",
+     "M.Sc.Biotechnology info", "M.Sc.Biotechnology info", "pg Courses in Biotechnology for master", "M.Sc.Biotechnology info",
+     "pg Courses in Biotechnology for master","Details about M.Sc.Biotechnology Program","information about M.Sc.Biotechnology"],
+   "responses": ["baki che add karvanu"]
+    },
+  {
+   "tag": "M.Sc.Biotechnology eligibility",
+   "patterns": ["Who can apply for M.Sc.Biotechnology?", "M.Sc.Biotechnology Application Requirements",
+     "What do I need to qualify for M.Sc.Biotechnology?", "Entry qualifications for M.Sc.Biotechnology",
+     "Admission standards for M.Sc.Biotechnology", "What are the eligibility requirements for M.Sc.Biotechnology?",
+     "Minimum requirements for M.Sc.Biotechnology", "M.Sc.Biotechnology Admission Criteria", "Who is eligible for M.Sc.Biotechnology?",
+     "What are the conditions for M.Sc.Biotechnology?", "Prerequisites for M.Sc.Biotechnology Enrollment",
+     "Criteria for Admission to M.Sc.Biotechnology", "Qualifications needed for M.Sc.Biotechnology",
+     "Eligibility for master of Science in Biotechnology", "Requirements for M.Sc.Biotechnology Admission",
+     "M.Sc.Biotechnology eligibility", "M.Sc.Biotech eligibility", "Biotech eligibility"],
+       "responses": ["Bachelor’s degree in physical, biological, agricultural, veterinary and fishery sciences, pharmacy, engineering/ technology .<br>OR<br> Bachelor's Degree (Physician assistant course)<br> OR <br> Bachelor's in Medicine (MBBS) OR BDS.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"]
+    },
+  {
+      "tag": "M.Sc.Biotechnology curriculum",
+    "patterns": ["Overview of M.Sc.Biotechnology Studies","What is covered in M.Sc.Biotechnology Program?",
+      "Components of M.Sc.Biotechnology Curriculum", "Coursework for M.Sc.Biotechnology Degree",
+      "Details of master of Science in Biotechnology Curriculum", "Outline of postgraduate Biotechnology Courses",
+      "M.Sc.Biotechnology Course Outline", "M.Sc.Biotechnology curriculum", "M.Sc.Biotechnology curriculum", "Biotechnology curriculum","M.Sc.Biotechnology curriculum", "Biotechnology curriculum"],
+      "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Agriculture Biotechnology<br><b>(2)</b> Animal & Plant Cell Culture<br><b>(3)</b> Aquaculture Technology<br><b>(4)</b> Biopharmaceuticals<br><b>(5)</b> Embryology & ART<br><b>(6)</b> Molecular Biology Techniques<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b>"       ]
+    },
+  {
+        "tag": "M.Sc.Biotechnology future prospects",
+    "patterns": ["Potential careers for M.Sc.Biotechnology graduates", "Prospects for M.Sc.Biotechnology professionals",
+      "Opportunities for M.Sc.Biotechnology alumni", "What can you do with a M.Sc.Biotechnology degree?",
+      "Employment options for M.Sc.Biotechnology holders", "Career pathways for M.Sc.Biotechnology majors",
+      "Outlook for M.Sc.Biotechnology graduates", "Future employment possibilities with a M.Sc.Biotechnology degree",
+      "Job prospects after completing master of Science in Biotechnology", "Career opportunities for M.Sc.Biotechnology graduates",
+      "M.Sc.Biotechnology Course future prospects", "M.Sc.Biotechnology future prospects","M.Sc.Biotech future prospects",
+      "Tell me about M.Sc.Biotechnology Course future prospects", "Tell me about M.Sc.Biotech Course future prospects",
+      "Biotech Course future prospects","M.Sc.Biotechnology future prospects", "M.sc.Biotech future prospects"],
+      "responses": ["<b>(1)</b> Agro-industries<br><b>(2)</b> Aquaculture & Processing Industries<br><b>(3)</b> Scientist in Animal & Diagnostic Research<br><b>(4)</b> Bio-processing Industries<br><b>(5)</b> Drug and Pharmaceutical Research<br><b>(6)</b> Quality Controller<br><b>(7)</b> Academician <br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>"]
+    },
+{
+    "tag": "M.Sc.Genetics info",
+      "patterns": ["Information on M.Sc.Genetics Degree","master's in Genetics Program Details",
+     "M.Sc.Genetics Course Structure","Introduction to M.Sc.Genetics","Overview of Undergraduate Genetics Courses",
+     "M.Sc.Genetics Program Overview","Details of M.Sc.Genetics Course","Description of master's of Science in Genetics",
+     "M.Sc.Genetics Course Description", "Tell me about M.Sc.Genetics Course Description", "pg Courses in Genetics for master",
+     "M.Sc.Genetics info", "M.Sc.Genetics info", "pg Courses in Genetics for master", "M.Sc.Genetics info",
+     "pg Courses in Genetics for master","Details about M.Sc.Genetics Program","information about M.Sc.Genetics"],
+      "responses": ["baki che add karvanu"]
+    },
+  {
+    "tag": "M.Sc.Genetics eligibility",
+   "patterns": ["Who can apply for M.Sc.Genetics?", "M.Sc.Genetics Application Requirements",
+     "What do I need to qualify for M.Sc.Genetics?", "Entry qualifications for M.Sc.Genetics",
+     "Admission standards for M.Sc.Genetics", "What are the eligibility requirements for M.Sc.Genetics?",
+     "Minimum requirements for M.Sc.Genetics", "M.Sc.Genetics Admission Criteria", "Who is eligible for M.Sc.Genetics?",
+     "What are the conditions for M.Sc.Genetics?", "Prerequisites for M.Sc.Genetics Enrollment",
+     "Criteria for Admission to M.Sc.Genetics", "Qualifications needed for M.Sc.Genetics",
+     "Eligibility for master of Science in Genetics", "Requirements for M.Sc.Genetics Admission",
+     "M.Sc.Genetics eligibility", "M.Sc.Genetics eligibility", "Genetics eligibility"],
+    "responses": ["Bachelor’s degree in physical, biological, agricultural, veterinary and fishery sciences, pharmacy, engineering/ technology.<br>OR<br> Bachelor's Degree (Physician assistant course)<br> OR<br> Bachelor's in Medicine (MBBS) OR BDS.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b>"]
+  },
+  {
+    "tag": "M.Sc.Genetics curriculum",
+    "patterns": ["Overview of M.Sc.Genetics Studies","What is covered in M.Sc.Genetics Program?",
+        "Components of M.Sc.Genetics Curriculum", "Coursework for M.Sc.Genetics Degree",
+        "Details of master of Science in Genetics Curriculum", "Outline of Undergraduate Genetics Courses",
+      "M.Sc.Genetics Course Outline", "M.Sc.Genetics curriculum", "M.Sc.Genetics curriculum", "Genetics curriculum","M.Sc.Genetics curriculum", "Genetics curriculum"],
+    "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Gene Expression and Regulation<br><b>(2)</b> Genetic Disorders and Counselling<br><b>(3)</b> Genomics and Proteomics, RNA Biology<br><b>(4)</b> Molecular Biology Techniques<br><b>(5)</b> Molecular Diagnostics<br><b>(6)</b> rDNA Technology<br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b> "]
+  },
+  {
+    "tag": "M.Sc.Genetics future prospects",
+    "patterns": ["Potential careers for M.Sc.Genetics graduates", "Prospects for M.Sc.Genetics professionals",
+      "Opportunities for M.Sc.Genetics alumni", "What can you do with a M.Sc.Genetics degree?",
+      "Employment options for M.Sc.Genetics holders", "Career pathways for M.Sc.Genetics majors",
+      "Outlook for M.Sc.Genetics graduates", "Future employment possibilities with a M.Sc.Genetics degree",
+      "Job prospects after completing master of Science in Genetics", "Career opportunities for M.Sc.Genetics graduates",
+      "M.Sc.Genetics Course future prospects", "M.Sc.Genetics future prospects","M.Sc.Genetics future prospects",
+      "Tell me about M.Sc.Genetics Course future prospects", "Tell me about M.Sc.Genetics Course future prospects",
+      "Genetics Course future prospects","M.Sc.Genetics future prospects", "M.sc.Genetics future prospects"],
+    "responses": ["<b>(1)</b> Plant Breeder/ Geneticist<br><b>(2)</b>Genetic Scientist in Agriculture, Animal and Food Industry<br><b>(3)</b>Diagnosis Kit DeveloperGenetic counselor and Diagnosis Technician<br><b>(4)</b>Quality Controller<br><b>(5)</b>Academician <br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>"]
+  },
+{
+    "tag": "M.Sc.Medical Biotechnology info",
+   "patterns": ["Information on M.Sc.Medical Biotechnology Degree","master's in Medical Biotechnology Program Details",
+     "M.Sc.Medical Biotechnology Course Structure","Introduction to M.Sc.Medical Biotechnology","Overview of Undergraduate Medical Biotechnology Courses",
+     "M.Sc.Medical Biotechnology Program Overview","Details of M.Sc.Medical Biotechnology Course","Description of master's of Science in Medical Biotechnology",
+     "M.Sc.Genetics Course Description", "Tell me about M.Sc.Medical Biotechnology Course Description", "pg Courses in Genetics for master",
+     "M.Sc.Medical Biotechnology info", "M.Sc.MedBio  info", "pg Courses in Medical Biotechnology for master", "M.Sc.Medical Biotechnology info",
+     "pg Courses in Genetics for master","Details about M.Sc.Genetics Program","information about M.Sc.Genetics"],
+        "responses": ["baki che add karvanu"]
+    },
+  {
+    "tag": "M.Sc.Medical Biotechnology eligibility",
+   "patterns": ["Who can apply for M.Sc.Medical Biotechnology?", "M.Sc.Medical Biotechnology Application Requirements",
+     "What do I need to qualify for M.Sc.Medical Biotechnology?", "Entry qualifications for M.Sc.Medical Biotechnology",
+     "Admission standards for M.Sc.Medical Biotechnology", "What are the eligibility requirements for M.Sc.Medical Biotechnology?",
+     "Minimum requirements for M.Sc.Medical Biotechnology", "M.Sc.Medical Biotechnology Admission Criteria", "Who is eligible for M.Sc.Medical Biotechnology?",
+     "What are the conditions for M.Sc.Medical Biotechnology?", "Prerequisites for M.Sc.Medical Biotechnology Enrollment",
+     "Criteria for Admission to M.Sc.Medical Biotechnology", "Qualifications needed for M.Sc.Medical Biotechnology",
+     "Eligibility for master of Science in Medical Biotechnology", "Requirements for M.Sc.Medical Biotechnology Admission",
+     "M.Sc.Medical Biotechnology eligibility", "M.Sc.Medical Biotechnology eligibility", "Medical Biotechnology eligibility"],
+    "responses": ["Bachelor’s degree in physical, biological, agricultural, veterinary and fishery sciences, pharmacy, engineering/ technology.<br>OR<br> Bachelor's Degree (Physician assistant course))<br> OR<br>Bachelor's in Medicine (MBBS) OR BDS.<br><b>notes:<br> if you need more info then type ('course name' + 'info').</b> "]
+  },
+  {
+    "tag": "M.Sc.Medical Biotechnology curriculum",
+   "patterns": ["Overview of M.Sc.Medical Biotechnology Studies","What is covered in M.Sc.Medical Biotechnology Program?",
+      "Components of M.Sc.Medical Biotechnology Curriculum", "Coursework for M.Sc.Medical Biotechnology Degree",
+      "Details of master of Science in Medical Biotechnology Curriculum", "Outline of Undergraduate Medical Biotechnology Courses",
+      "M.Sc.Medical Biotechnology Course Outline", "M.Sc.Medical Biotechnology curriculum", "M.Sc.Medical Biotechnology curriculum",
+     "Medical Biotechnology curriculum","M.Sc.Medical Biotechnology curriculum", "Medical Biotechnology curriculum"],
+    "responses": ["<b>The program focuses on areas such as:</b><br><b>(1)</b> Animal Cell Culture<br>Cancer and Stem Cell Biology<br><b>(2)</b> Clinical, Serological & MolecularDiagnostics<br><b>(3)</b> Embryology & ART<br><b>(4)</b> Genetic Disorders and Counselling<br><b>(5)</b> rDNA Technology <br><b>notes:<br> if you are looking for a future prospects then type ('course name' + 'future prospects').</b>"]
+  },
+  {
+    "tag": "M.Sc.Medical Biotechnology future prospects",
+    "patterns": ["Potential careers for M.Sc.Medical Biotechnology graduates", "Prospects for M.Sc.Medical Biotechnology professionals",
+      "Opportunities for M.Sc.Medical Biotechnology alumni", "What can you do with a M.Sc.Medical Biotechnology degree?",
+      "Employment options for M.Sc.Medical Biotechnology holders", "Career pathways for M.Sc.Medical Biotechnology majors",
+      "Outlook for M.Sc.Medical Biotechnology graduates", "Future employment possibilities with a M.Sc.Medical Biotechnology degree",
+      "Job prospects after completing master of Science in Medical Biotechnology", "Career opportunities for M.Sc.Medical Biotechnology graduates",
+      "M.Sc.Medical Biotechnology Course future prospects", "M.Sc.Medical Biotechnology future prospects","M.Sc.Medical Biotechnology future prospects",
+      "Tell me about M.Sc.Medical Biotechnology Course future prospects", "Tell me about M.Sc.Medical Biotechnology Course future prospects",
+      "Medical Biotechnology Course future prospects","M.Sc.Medical Biotechnology future prospects", "M.sc.Medical Biotechnology future prospects"],
+    "responses": ["<b>(1)</b> Research Scientist<br><b>(2)</b> Cancer Diagnosis and Prognosis<br><b>(3)</b> Stem Cell and Cord Cell Banking<br><b>(4)</b> In vitro fertility centres<br><b>(5)</b> Hospital & Clinical Research Laboratories<br><b>(6)</b> Academician <br><b>notes:<br> if you are looking for a fees structure then type ('course name' + 'fees structure').</b>"]
+  },
+  {
+    "tag": "information technology future careers",
+  "patterns": ["Can you provide a list of promising future careers in the field of information technology?","Future IT career options?",
+    "Upcoming tech job prospects?","give me some potential future career paths in information technology"],
+  "responses": ["<b>Sure, here are some potential future career paths in information technology:</b><br><b>(1)</b> Data Scientist<br><b>(2)</b> Cybersecurity Specialist<br><b>(3)</b> Cloud Architect<br><b>(4)</b> AI/Machine Learning Engineer<br><b>(5)</b> Blockchain Developer<br><b>(6)</b> Virtual Reality (VR) Developer<br><b>(7)</b> Augmented Reality (AR) Developer<br><b>(8)</b> Internet of Things (IoT) Specialist<br><b>(9)</b> DevOps Engineer<br><b>(10)</b> Quantum Computing Scientist<br><b>(11)</b> Digital Transformation Consultant<br><b>(12)</b> UX/UI Designer<br><b>(13)</b> Big Data Engineer<br><b>(14)</b> Robotics Engineer<br><b>(15)</b> Health Informatics Specialist <br><b>nots:<br> If additional information is required in this list, please type ('course name') </b> "]
+  },
+  {"tag": "Data Scientist",
+  "patterns": ["What technical Skills are essential for a career in Data Scientist","what Skills required to become data scientist?",
+    "Data Scientist","What technical  Skills do I need for Data Science?","Which programming languages and tools are vital in Data Science?",
+    "What non-technical Skills are crucial for Data Scientists?"],
+  "responses": ["Analyzing complex data to extract insights and make data-driven decisions.<br><b>(1) Involves:</b> Extracting insights from large datasets to solve complex problems.<br><b>(2) Specializations:</b> Machine learning, artificial intelligence, data analysis, etc.<br><b>(3) Skills:</b> Statistics, programming (Python, R), analytical thinking, communication."]
+  },
+   {"tag": "Cybersecurity",
+  "patterns": ["Cybersecurity","Cybersecurity Specialist", "what Skills required to become Cybersecurity?","What technical Skills do I need for Cybersecurity?",
+    "Which programming languages and tools are vital in Cybersecurity?","What technical Skills are essential for a career in cybersecurity"],
+  "responses": ["Protecting computer systems and networks from cyber threats and attacks.<br><b>(1) Involves:</b> Protecting computer systems, networks, and data from cyber threats and attacks.<br><b>(2) Specializations:</b> Network security, endpoint security, penetration testing, security analysis, etc.<br><b>(3) Skills:</b> Knowledge of security protocols and tools, understanding of vulnerabilities and threats, proficiency in <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; programming languages (e.g., Python, C/C++), problem-solving, attention to detail, continuous learning"]
+  },
+   {"tag": "Cloud Architect",
+  "patterns": ["Cloud Architect","What technical proficiencies are crucial for aspiring Cloud Architects",
+    "what Skills required to become Cloud Architect?","Cloud Architect","What technical Skills do I need for Cloud Architect?",
+    "Which programming languages and tools are vital in Cloud Architect?","What technical Skills are essential for a career in Cloud Architect"],
+  "responses": ["Designing and implementing cloud-based solutions for businesses.<br><b>(1) Involves:</b> Designing and implementing cloud-based solutions to meet business needs and objectives.<br><b>(2) Specializations:</b> Cloud infrastructure design, cloud migration strategies, cloud security architecture, etc.<br><b>(3) Skills:</b> Proficiency in cloud platforms (such as AWS, Azure, or Google Cloud), understanding of networking &nbsp;&nbsp;&nbsp;&nbsp;concepts, experience with infrastructure as code tools (e.g., Terraform, CloudFormation), knowledge of security &nbsp;&nbsp;&nbsp&nbsp;best practices in the cloud, communication and collaboration Skills."]
+  },
+   {"tag": "AI/Machine Learning Engineer",
+  "patterns": ["AI/Machine Learning Engineer","What technical proficiencies are crucial for aspiring AI/Machine Learning Engineer",
+    "what Skills required to become AI/Machine Learning Engineer?","What technical Skills do I need for AI/Machine Learning Engineer?",
+    "Which programming languages and tools are vital in AI/Machine Learning Engineer?",
+    "What technical Skills are essential for a career in AI/Machine Learning Engineer"],
+  "responses": ["Developing algorithms and systems that enable machines to learn and make decisions.<br><b>(1) Involves:</b> Developing algorithms and models to enable machines to learn from data and make decisions &nbsp;&nbsp;&nbsp;&nbsp;autonomously.<br><b>(2) Specializations:</b> Machine learning, deep learning, natural language processing, computer vision, etc.<br><b>(3) Skills:</b> Proficiency in programming languages (Python, R, Java), familiarity with machine learning frameworks &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TensorFlow, PyTorch), strong grasp of statistics and mathematics, problem-solving abilities, and knowledge of data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;structures and algorithms."]
+  },
+  {"tag": "Blockchain Developer",
+  "patterns": ["Blockchain Developer","What technical proficiencies are crucial for aspiring Blockchain Developer",
+    "what  Skills required to become Blockchain Developer","What technical  Skills do I need for Blockchain Developer?",
+    "Which programming languages and tools are vital in Blockchain Developer?",
+    "What technical  Skills are essential for a career in Blockchain Developer"],
+  "responses": ["Creating decentralized applications and smart contracts using blockchain technology.<br><b>(1) Involves:</b> Creating decentralized applications (DApps) and smart contracts using blockchain technology to ensure &nbsp;&nbsp;&nbsp;&nbsp;secure and transparent transactions.<br><b>(2) Specializations:</b> Blockchain development, smart contract development, decentralized finance (DeFi), &nbsp;&nbsp;&nbsp;&nbsp;cryptocurrency, etc.<br><b>(3) Skills:</b> Proficiency in blockchain platforms (Ethereum, Hyperledger, etc.), smart contract programming (Solidity), &nbsp;&nbsp;&nbsp;&nbsp;understanding of cryptographic principles, familiarity with decentralized consensus mechanisms (Proof of Work, &nbsp;&nbsp;&nbsp;&nbsp;Proof of Stake), and ability to design and implement secure and efficient blockchain solutions."]
+  },
+   {"tag": "Virtual Reality (VR) Developer",
+  "patterns": ["vr Developer","Virtual Reality (VR) Developer","What technical proficiencies are crucial for aspiring Virtual Reality Developer",
+    "what  Skills required to become Virtual Reality Developer","What technical Skills do I need for Virtual Reality Developer?",
+    "Which programming languages and tools are vital in Virtual Reality Developer?",
+    "What technical Skills are essential for a career in Virtual Reality Developer"],
+  "responses": ["Building immersive experiences and applications for virtual reality platforms<br><b>(1) Involves:</b> Designing and developing immersive virtual environments and experiences for various applications, &nbsp;&nbsp;&nbsp;&nbsp;including gaming, education, healthcare, and simulation.<br><b>(2) Specializations:</b> VR development, 3D modeling and animation, user interface (UI) design, interactive storytelling, &nbsp;&nbsp;&nbsp;&nbsp;etc.<br><b>(3) Skills:</b> Proficiency in VR development platforms (Unity, Unreal Engine), expertise in 3D graphics programming &nbsp;&nbsp;&nbsp;&nbsp;(OpenGL, DirectX), strong understanding of spatial computing concepts, creativity in designing engaging user &nbsp;&nbsp;&nbsp;&nbsp;experiences, and collaboration Skills for multidisciplinary teams."]
+  },
+   {"tag": "Augmented Reality (AR) Developer",
+  "patterns": ["Ar Developer","Augmented Reality (AR) Developer","What technical proficiencies are crucial for aspiring Augmented Reality Developer",
+    "what Skills required to become Augmented Reality Developer Developer","What technical Skills do I need for Augmented Reality Developer Developer?",
+    "Which programming languages and tools are vital in Augmented Reality Developer?",
+    "What technical Skills are essential for a career in Augmented Reality Developer"],
+  "responses": ["Developing applications that overlay digital information onto the real world.<br><b>(1) Involves:</b> Creating interactive digital overlays on the real world through mobile devices or specialized hardware, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enhancing user experiences in various fields such as gaming, navigation, education, and marketing.<br><b>(2) Specializations:</b> AR development, computer vision, spatial mapping, gesture recognition, etc.<br><b>(3) Skills:</b> Proficiency in AR development frameworks (ARKit, ARCore), strong background in 3D graphics &nbsp;&nbsp;&nbsp;&nbsp;programming (Unity, OpenGL), familiarity with computer vision techniques, ability to work with sensor data and &nbsp;&nbsp;&nbsp;&nbsp;understand spatial computing concepts, and creativity in designing compelling AR experiences."]
+  },
+   {"tag": "Internet of Things (IoT) Specialist",
+  "patterns": ["IoT Specialist","Internet of Things (IoT) Specialist","What technical proficiencies are crucial for aspiring Internet of Things (IoT) Specialist",
+    "what Skills required to become Internet of Things (IoT) Specialist","What technical Skills do I need for IoT Specialist?",
+    "Which programming languages and tools are vital in Internet of Things (IoT) Specialist?",
+    "What technical Skills are essential for a career in Internet of Things (IoT) Specialist"],
+  "responses": ["Designing and implementing IoT solutions for connecting and controlling devices.<br><b>(1) Involves:</b> Connecting physical devices to the internet to collect and exchange data, enabling automation, &nbsp;&nbsp;&nbsp;&nbsp;monitoring, and control of various systems and processes.<br><b>(2) Specializations:</b> IoT development, sensor technology, wireless communication protocols, edge computing, etc.<br><b>(3) Skills:</b> Proficiency in IoT platforms and protocols (MQTT, CoAP), experience with embedded systems &nbsp;&nbsp;&nbsp;&nbsp;programming (C/C++, Python), knowledge of networking concepts and protocols (TCP/IP, Wi-Fi, Bluetooth), &nbsp;&nbsp;&nbsp;&nbsp;understanding of data security and privacy concerns in IoT applications, and ability to design scalable and robust &nbsp;&nbsp;&nbsp;&nbsp;IoT solutions."]
+  },
+   {"tag": "Devops Engineer",
+  "patterns": ["Devops Engineer","What technical proficiencies are crucial for aspiring Devops Engineer",
+    "what Skills required to become Devops Engineer","What technical Skills do I need for Devops Engineer?",
+    "Which programming languages and tools are vital in Devops Engineer?",
+    "What technical Skills are essential for a career in Devops Engineer"],
+  "responses": ["Streamlining the software development process through automation, collaboration, and continuous &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integration/continuous deployment (CI/CD) practices.<br><b>(1) Involves:</b> Streamlining software development and deployment processes through automation, collaboration, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continuous integration/continuous deployment (CI/CD) practices to achieve faster and more reliable delivery of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;software products.<br><b>(2) Specializations:</b> DevOps methodologies, infrastructure as code (IaC), containerization (Docker, Kubernetes), cloud &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;computing, etc.<br><b>(3) Skills:</b> Proficiency in scripting and automation tools (Bash, Python, Ansible), experience with version control systems &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Git), understanding of CI/CD pipelines and tools (Jenkins, GitLab CI), knowledge of cloud platforms and services &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AWS, Azure, Google Cloud), strong problem-solving abilities, and effective communication and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;collaboration Skills for cross-functional teams."]
+  },
+   {"tag": "Quantum Computing Scientist",
+  "patterns": ["Quantum Computing Scientist","What technical proficiencies are crucial for aspiring Quantum Computing Scientist",
+    "what Skills required to become Quantum Computing Scientist","What technical Skills do I need for Quantum Computing Scientist?",
+    "Which programming languages and tools are vital in Quantum Computing Scientist?",
+    "What technical Skills are essential for a career in Quantum Computing Scientist"],
+  "responses": ["Researching and developing quantum algorithms and applications for quantum computers.<br><b>(1) Involves:</b> Developing algorithms and protocols to harness the principles of quantum mechanics for processing and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;analyzing information, potentially solving computationally intensive problems exponentially faster than classical &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;computers.<br><b>(2) Specializations:</b> Quantum computing, quantum algorithms, quantum information theory, quantum cryptography, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;etc.<br><b>(3) Skills:</b> Proficiency in quantum programming languages (Qiskit, Quipper), understanding of quantum mechanics and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linear algebra, familiarity with quantum hardware architectures (superconducting qubits, trapped ions), strong &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;analytical and problem-solving Skills, and effective communication for translating complex concepts to diverse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;audiences."]
+  },
+   {"tag": "Digital Transformation Consultant",
+  "patterns": ["Digital Transformation Consultant","What technical proficiencies are crucial for aspiring Digital Transformation Consultant",
+    "what Skills required to become Digital Transformation Consultant","What technical Skills do I need for Digital Transformation Consultant?",
+    "Which programming languages and tools are vital in Digital Transformation Consultant?",
+    "What technical Skills are essential for a career in Digital Transformation Consultant"],
+  "responses": ["Advising companies on leveraging technology to transform their business processes and operations.<br><b>(1) Involves:</b> Guiding organizations through strategic changes to leverage digital technologies and processes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;effectively, enhancing operations, customer experiences, and business outcomes.<br><b>(2) Specializations:</b> Digital strategy development, process optimization, technology integration, organizational change &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;management, etc.<br><b>(3) Skills:</b> Proficiency in digital technologies and trends (cloud computing, IoT, AI/ML), ability to assess and analyze &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;business processes and systems, strategic thinking to align technology initiatives with organizational goals, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;excellent communication and stakeholder management Skills, and experience in project management and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;implementation."]
+  },
+   {"tag": "UX/UI Designer",
+  "patterns": ["UX/UI Designer","UI/UX Designer","What technical proficiencies are crucial for aspiring UX/UI Designer",
+    "what Skills required to become UX/UI Designer","What technical Skills do I need for UX/UI Designer?",
+    "Which programming languages and tools are vital in UX/UI Designer?","What technical Skills are essential for a career in UX/UI Designer"],
+  "responses": ["Creating intuitive and visually appealing user interfaces and experiences for software applications.<br><b>(1) Involves:</b> Creating intuitive and visually appealing user interfaces and experiences for digital products and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;services, focusing on enhancing user satisfaction and usability.<br><b>(2) Specializations:</b> User experience (UX) design, user interface (UI) design, information architecture, interaction &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;design, etc.<br><b>(3) Skills:</b> Proficiency in design tools (Adobe XD, Sketch, Figma), understanding of user-centered design principles &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and methodologies, ability to conduct user research and usability testing, strong visual design Skills, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;excellent communication and collaboration Skills for working with cross-functional teams and stakeholders."]
+  },
+   {"tag": "Big Data Engineer",
+  "patterns": ["Big Data Engineer","What technical proficiencies are crucial for aspiring Big Data Engineer",
+    "what Skills required to become Big Data Engineer","What technical Skills do I need for Big Data Engineer?",
+    "Which programming languages and tools are vital in Big Data Engineer?","What technical Skills are essential for a career in Big Data Engineer"],
+  "responses": ["Building and maintaining large-scale data processing systems for storing, managing, and analyzing big data.<br><b>(1) Involves:</b> Designing, constructing, and maintaining scalable data pipelines and infrastructure to handle large &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;volumes of data.<br><b>(2) Specializations:</b> Distributed computing, data warehousing, data architecture, etc.<br><b>(3) Skills:</b> Proficiency in programming languages like Java, Scala, or Python, experience with big data technologies &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;such as Hadoop, Spark, Kafka, understanding of database systems (SQL, NoSQL), problem-solving Skills, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;teamwork, and communication abilities."]
+  },
+   {"tag": "Robotics Engineer",
+  "patterns": ["Robotics Engineer","What technical proficiencies are crucial for aspiring Robotics Engineer",
+    "what Skills required to become Robotics Engineer","What technical Skills do I need for Robotics Engineer?",
+    "Which programming languages and tools are vital in Robotics Engineer?","What technical Skills are essential for a career in Robotics Engineer"],
+  "responses": ["Designing and programming robots for various applications, from manufacturing to healthcare.<br><b>(1) Involves:</b> Designing, developing, and implementing robotic systems to perform tasks autonomously or semi- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;autonomously.<br><b>(2) Specializations:</b> Control systems, computer vision, sensor fusion, motion planning, etc.<br><b>(3) Skills:</b> Proficiency in programming languages such as C++, Python, or ROS (Robot Operating System), &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;understanding of mechanical and electrical systems, familiarity with sensors and actuators, problem-solving &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abilities, creativity, and effective communication Skills.<br>"]
+  },
+   {"tag": "Health Informatics Specialist",
+  "patterns": ["Health Informatics Specialist","What technical proficiencies are crucial for aspiring Health Informatics Specialist",
+    "what Skills required to become Health Informatics Specialist","What technical Skills do I need for Health Informatics Specialist?",
+    "Which programming languages and tools are vital in Health Informatics Specialist?",
+    "What technical Skills are essential for a career in Health Informatics Specialist"],
+  "responses": ["Leveraging technology to improve healthcare delivery, patient care, and medical research.<br><b>(1) Involves:</b> Leveraging information technology and data analytics to improve the efficiency and outcomes of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;healthcare systems.<br><b>(2) Specializations:</b> Electronic Health Records (EHR), clinical informatics, healthcare data management, etc.<br><b>(3) Skills:</b> Proficiency in programming (e.g., SQL, Python), understanding of healthcare data standards, knowledge of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statistical methods, data analysis Skills, effective communication with healthcare professionals, regulatory &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;knowledge (HIPAA, etc.), and a strong analytical mindset."]
+  },
+  {
+    "tag": "filed name",
+    "patterns": ["filed name","which types of degrees available in srki","which types of degrees available in shree ramkrishana institute" ],
+   "responses": ["<b>Shree Ramkrishna Institute Of Computer Education And Applied Sciences College provide this degrees.</b><br><br><b>(1)</b> Courses Of Under Graduate (UG-Course)Bachelor courses<br><b>(2)</b> Courses Of Post Graduate (PG-Course)Bachelor course<br><b>(3)</b> Post Graduate Diploma Courses<br><b>Notes:<br>If you are interested in any specific degree, please type the name of the degree.</b>"]
+  },
+  {
+    "tag": "QR code",
+    "patterns": ["SRKI Admission Inquiry Form 2024 - 25" ],
+   "responses": [" For Admission Inquiry of Academic Year : 2023-24 Google form and QR Code.<a href='https://www.srki.ac.in/upload/2023-24/Admission%202023-24/EOI_QR_2425.png'  target='_blank'>QR code</a>"]
+  },{
+    "tag": "about Institute",
+    "patterns": ["Institute","about Institute"],
+    "responses": ["This college is established & developed with the donations from many organizations, one of them is Shree Ramkrishna Charitable Trust. By providing solid academic foundation, the rigorous curriculum, it prepares you to successfully complete your programme. You will study in State of the art laboratories and lecture rooms. You will also get personalized academic support and guidance of caring faculty for teaching & learning. The college will remain open from 09:00 a.m. to 06:00 p.m."]
+  },
+
+  {
+    "tag": "All M.Sc Courses FEE structure",
+    "patterns": ["M.Sc.Organic Chemistry fees structure", "M.Sc.Org.Chem fees structure", "M.Sc.Microbiology fees structure", "M.Sc.Micro fees structure",
+      "M.Sc.Industrial Microbiology fees structure", "M.Sc.Ind.Microbiology fees structure", "M.Sc.Medical Laboratory Technology fees structure",
+      "M.Sc.Medical Laboratory fees structure", "M.Sc.Med.Lab fees structure", "M.Sc.Information Technology fees structure", "M.Sc.it fees structure",
+      "M.Sc.WMT fees structure", "M.Sc.Web and Mobile Technology fees structure", "M.Sc.Mobile Technology fees structure", "M.Sc.Web fees structure",
+      "M.Sc.Advanced Computing fees structure", "M.Sc.Adv.Comp fees structure", "M.Sc.Biotechnology fees structure", "M.Sc.Biotech fees structure",
+      "M.Sc.Genetics fees structure", "M.Sc.gen fees structure", "M.Sc.Medical Biotechnology fees structure","M.Sc.Med.Biotech fees structure","M.Sc.Organic Chemistry fees ", "M.Sc.Org.Chem fees", "M.Sc.Microbiology fees", "M.Sc.Micro fees",
+      "M.Sc.Industrial Microbiology fees", "M.Sc.Ind.Microbiology fees", "M.Sc.Medical Laboratory Technology fees", "M.Sc.Medical Laboratory fees", "M.Sc.Med.Lab fees", "M.Sc.Information Technology fees", "M.Sc.it fees",
+      "M.Sc.WMT fees", "M.Sc.Web and Mobile Technology fees", "M.Sc.Mobile Technology fees", "M.Sc.Web fees", "M.Sc.Advanced Computing fees", "M.Sc.Adv.Comp fees",
+      "M.Sc.Biotechnology fees", "M.Sc.Biotech fees", "M.Sc.Genetics fees", "M.Sc.gen fees", "M.Sc.Medical Biotechnology fees","M.Sc.Med.Biotech fees"],
+    "responses": ["All M.Sc. Courses FEE structure Admission<br> fee=RS 1,000<br>Year 1<br>University per year fee= RS 90,500 Each odd semester fee=RS 47,500 even semester fee= RS 43,000<br>Year 2<br>University per year fee= RS 90,500 Each odd semester fee=RS 47,500 even semester fee= RS 43,000<br>\nGrandTotal fee= RS 1,81,000]<br>\n<b>Notes:<br> Here is the link to the fee structure:</b> <a href='https://www.srki.ac.in/pages/fees-structure/'  target='_blank'>Fee Structure.</a>"]
+  },
+  {
+  "tag": "Contact_Info",
+  "patterns": ["Contact us details", "Contact information", "How to contact", "Need assistance", "Get in touch"],
+  "responses": ["For assistance, you can reach us at the following contacts:<br>CALL US:<br>Admin-Office: 7228018498<br>Institute: 7228018499, 7228018500<br>Principal: 7228018497<br>WHATSAPP: 7228018496<br>EMAIL: info@srki.ac.in"]
+},
+  {"tag": "Affiliation",
+  "patterns": ["Affiliation","Association","Membership","Relationship","Attachment","Link","Tie-up","Collaboration","Involvement","Bond","Connection"],
+  "responses": ["The institute is affiliated to Veer Narmad South Gujarat University since 1999 for all the courses time to time till today. With the inception of Sarvajanik University in the year 2021 institute is now one of the constituent colleges of Sarvajanik University.It has already been accredited by National Assessment and Accreditation Council (NAAC) as B Grade with 2.67 CGPA and by AAA(KCG Govt. of Gujrat) in 2015 with 2.92 on four point scale. "]
+  },{
+  "tag": "Computer Science Placement",
+  "patterns": ["Computer science job placement","Placement", "Placement assistance for computer science students", "Career opportunities in computer science", "Computer science internship placement",
+    "Placement services for computer science graduates", "Job prospects for computer science majors"],
+   "responses": ["<b>Certainly! Here are the top 5 companies known for their internship placements for both bachelor's and master's students:</b><br><b>internship duration: &nbsp;&nbsp;&nbsp;&nbsp;</b><br><b>(1).</b> Under Graduate in sem-6 duration 6-months. &nbsp;&nbsp;&nbsp;&nbsp;<br><b>(2).</b> Post Graduate in sem-4 duration 6-months.<br><b> Company name &nbsp;&nbsp;&nbsp;&nbsp;  Designation  &nbsp;&nbsp;&nbsp;&nbsp;Salary Offered </b><br> narola infotech &nbsp;&nbsp;&nbsp;&nbsp; software development &nbsp;&nbsp;&nbsp; 2.40 lpa<br> qik it &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; software development &nbsp;&nbsp;&nbsp;2.40 lpa <br> Comnet development india &nbsp;&nbsp;&nbsp; Software Developer &nbsp;&nbsp;&nbsp; nil<br>  Softick LLC &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nil &nbsp;&nbsp;&nbsp;&nbsp; 3 lpa<br> Logicwind &nbsp;&nbsp;&nbsp; nil &nbsp;&nbsp;&nbsp; 2.64 lpa <br><b> These companies are highly sought-after by students for their internship programs due to the valuable hands-on experience, mentorship opportunities, and potential for future employment.</b>"]
+  },
+  {
+  "tag": " ",
+  "patterns": [" "],
+  "responses": ["I do not understand..."]
+  }
+
+]}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Meyawo Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+<!--    <link rel="stylesheet" href="static/assets/vendors/themify-icons/css/themify-icons.css">-->
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/vendors/themify-icons/css/themify-icons.css')}}">
+
+    <!-- Bootstrap + Meyawo main styles -->
+<!--	<link rel="stylesheet" href="static/assets/css/meyawo.css">-->
+     <link rel="stylesheet" href="{{url_for('static', filename='assets/css/meyawo.css')}}">
+    <style>
+
+.c1 {
+  border-radius: 16px;
+  margin: 0 auto;
+  width: 300px;
+  max-width: 90%;
+  height: 400px;
+  margin-left: 105px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(static/assets/imgs/ShreeRamkrishna-Institue-04.png);
+  
+}
+.p2 {
+  border-radius: 16px;
+  margin: 0 auto;
+  width: 300px;
+  max-width: 90%;
+  min-height: 100px;
+  margin-left: 105px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(static/assets/imgs/folio-2.jpg);
+  
+}
+
+.p3 {
+  border-radius: 16px;
+  margin: 0 auto;
+  width: 300px;
+  max-width: 90%;
+  min-height: 100px;
+  margin-left: 105px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(static/assets/imgs/career.jpeg);
+  
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  transform: translateY(100%) translateY(-88px) translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.c2:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+  
+  transform: translateY(-100%) translateY(88px) translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.c1:hover .c2,
+.c1:hover .c2:before {
+  transform: translateY(0) translateZ(0);
+  
+}
+
+.p2:hover .c2,
+.p2:hover .c2:before {
+  transform: translateY(0) translateZ(0);
+  
+ 
+}
+
+.p3:hover .c2,
+.p3:hover .c2:before {
+  transform: translateY(0) translateZ(0);
+  
+}
+
+.c3 {
+  margin: 0;
+  padding: 24px;
+  font-size: 38px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.c4{
+  line-height: 1;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.description {
+  margin: 0;
+  padding: 0 24px 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* General layout and typography stuff */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  transition: all .3s ease
+}
+
+html {
+  font-size: 16px
+}
+
+body {
+  font-family: Open Sans, Verdana, sans-serif;
+  color: rgba(0, 0, 0, .87);
+  font-weight: 400;
+  line-height: 1.45
+}
+
+body,
+header {
+  background: #fafafa
+}
+
+header {
+  padding: 40px;
+  min-height: 200px;
+  text-align: center;
+  color: rgba(0, 0, 0, .87)
+}
+
+<!--header > * {-->
+<!--  max-width: 800px;-->
+<!--  margin-left: auto;-->
+<!--  margin-right: auto-->
+<!--}-->
+
+header>:last-child {
+  margin-bottom: 0
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #1c5b72;
+  font-size: 2.618em
+}
+
+@media (min-width:800px) {
+  h1 {
+    font-size: 4.236em;
+    font-weight: 300
+  }
+}
+
+p {
+  margin-bottom: 1.3em;
+  line-height: 1.618
+}
+
+@media (min-width:800px) {
+  p {
+    font-size: 1.3em
+  }
+}
+
+a {
+  color: #e03616;
+  text-decoration: none
+}
+.btn-shine {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: lightgrey;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+  .btn-shine:hover {
+            background: lightblue;
+        }
+
+        .btn-shine > svg {
+            width: 34px;
+            margin-left: 10px;
+            transition: transform .3s ease-in-out;
+        }
+
+        .btn-shine:hover svg {
+            transform: translateX(5px);
+        }
+
+        .btn-shine:active {
+            transform: scale(0.95);
+        }
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+                    
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Testmonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am CareerMate</span>
+            </h1>
+
+
+
+        </div>              
+    </header><!-- end of page header -->
+
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Service</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+<!--                    <div class="service-card">-->
+<!--                        <div class="body">-->
+                    <main>
+                        <div class='c1'>
+
+                            <div class='c2'>
+                                <h1 class='c3'>About Srki?</h1>
+                                <p class='c4'style="color:black;"><strong> SRKI is leading institution specializing in computer and applied sciences.
+                                  our programs are designed to meet industry demands and are delivered by experienced faculty members.
+                                   </strong></p>
+                        </div>
+                    </main>
+<!--                        </div>-->
+<!--                        </div>-->
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <main>
+                    <div class='p2'>
+                        <div class='c2'>
+                            <h1 class='c3'>Courses</h1>
+                            <p class='c4'style="color:black;"><strong>course name'+'eligibility' 'course name' + 'info' 'bachelor'+'course duration'
+                              'bachelor' + 'semester duration'
+                              'course name' + 'fees structure' 
+                            </strong></p>
+                        </div>
+                    </div>
+                </main>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <main>
+                        <div class='p3'>
+                            <div class='c2'>
+                                <h1 class='c3'>Career</h1>
+                                <p class='c4'style="color:black;"><strong></strong></p>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <center>
+  <div id="userInput">
+
+<!--    <a href="front1.html" class="btn-shine">Goto Live</a>-->
+
+<!--    <button class="btn-shine" onclick="window.location.href='/front1'">Next</button>-->
+     <button class="btn-shine" onclick="window.location.href='/front1'" >
+    <span>Continue</span>
+    <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+        <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+    </svg>
+</button>
+
+  </div>
+</center>
+<br>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0"> <script>document.write(new Date().getFullYear())</script>  </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+<!--    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>-->
+<!--    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>-->
+
+    <!-- bootstrap 3 affix -->
+<!--	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>-->
+
+    <!-- Meyawo js -->
+<!--    <script src="assets/js/meyawo.js"></script>-->
+
+
+</body>
+</html>
